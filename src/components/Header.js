@@ -10,13 +10,13 @@ export default class Header extends React.Component {
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <Link to="/">DegreeAudit++</Link>
+              <Link to="/home">DegreeAudit++</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem><Link to='/'>Home</Link></NavItem>
+              <NavItem><Link to='home'>Home</Link></NavItem>
               <NavItem><Link to='login'>Log Out</Link></NavItem>
             </Nav>
           </Navbar.Collapse>
