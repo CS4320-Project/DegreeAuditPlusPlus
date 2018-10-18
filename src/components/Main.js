@@ -8,7 +8,8 @@ export default class Main extends React.Component {
     return(
       <main>
         <Switch>
-          <Route exact path='/' component={Home}/>
+          <Route exact path='/home' component={Home}/>
+          <Route path='/' component={LoginForm}/>
           <Route path='/login' component={LoginForm}/>
         </Switch>
       </main>
