@@ -1,5 +1,10 @@
 import React, { Component } from "react";
+
+import StudentSearch from './StudentSearch';
+
+
 import ToggleButtons from './ToggleButtons';
+
 export default class Home extends React.Component{
   state = {users:[]}
 
@@ -12,6 +17,7 @@ export default class Home extends React.Component{
   render(){
     return(
       <div>
+    <StudentSearch/>
         <h1>Welcome to DegreeAudit++</h1>
         <h2>Users</h2>
         {this.state.users.map( user =>
