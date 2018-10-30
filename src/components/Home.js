@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+
 import StudentSearch from './StudentSearch';
+
+
+import ToggleButtons from './ToggleButtons';
 
 export default class Home extends React.Component{
   state = {users:[]}
@@ -19,7 +23,9 @@ export default class Home extends React.Component{
         {this.state.users.map( user =>
           <div key={user.id}>{user.username}</div>
         )}
+	<ToggleButtons/>
       </div>
+	
     );
   }
 }
