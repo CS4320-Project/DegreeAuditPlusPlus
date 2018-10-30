@@ -3,11 +3,11 @@ import ToggleButtons from './ToggleButtons';
 export default class Home extends React.Component{
   state = {users:[]}
 
-  componentDidMount() {
-    fetch('/users')
-      .then(res => res.json())
-      .then(users => this.setState({users}));
-  }
+  // componentDidMount() {
+  //   fetch('/users')
+  //     .then(res => res.json())
+  //     .then(users => this.setState({users}));
+  // }
 
   render(){
     return(
@@ -19,7 +19,7 @@ export default class Home extends React.Component{
         )}
 	<ToggleButtons/>
       </div>
-	
+
     );
   }
 }
