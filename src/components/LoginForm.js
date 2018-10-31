@@ -23,10 +23,11 @@ export default class LoginForm extends Component {
   }
 
   handleSubmit = event => {
+    event.preventDefault();
+    console.dir(this.props);
     if(this.state.pawPrint === 'sbc436'){
-      this.props.userHasAuthenticated(true);
+      this.props.childProps.userHasAuthenticated(true);
     } else {
-      event.preventDefault();
     }
   }
 
