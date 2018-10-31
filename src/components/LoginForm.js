@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+<<<<<<< HEAD
 import "../styles/Login.css";
 import Home from './Home';
 import StudentSearch from './StudentSearch'
 import { Switch, Route } from 'react-router-dom';
 
+=======
+import "../styles/LoginForm.css";
+>>>>>>> a109276a7655a4c1a3f928ffc1486e0753bdfb61
 
 export default class LoginForm extends Component {
   constructor(props) {
@@ -29,19 +33,12 @@ export default class LoginForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-	
-	  if (this.state.pawPrint == "sbc436" && this.state.password == "1234"){
-		  window.location = '/home';
-		  //<Route exact path='/home' component={Home}/>
-	  }
-	  else if (this.state.pawPrint == "NBalser" && this.state.password == "1234"){
-			window.location = '/studentSearch'; 
-		 // <Route exact path='/studentSearch' component={StudentSearch}/>
-		  }
-	  
-	  else{
-		   alert('Username or password is incorrect! ' );
-	  }
+
+    console.dir(this.props);
+    if(this.state.pawPrint === 'sbc436'){
+      this.props.childProps.userHasAuthenticated(true);
+    } else {
+    }
 
   }
   
@@ -50,8 +47,10 @@ export default class LoginForm extends Component {
     return (
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
-          <FormGroup id="spacing" controlId="pawPrint" bsSize="large">
-            <ControlLabel>Username</ControlLabel>
+
+          <FormGroup controlId="pawPrint" bsSize="large">
+            <ControlLabel>PawPrint</ControlLabel>
+
             <FormControl
               autoFocus
               type="pawPrint"
@@ -59,7 +58,7 @@ export default class LoginForm extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup id="spacing" controlId="password" bsSize="large">
+          <FormGroup controlId="password" bsSize="large">
             <ControlLabel>Password</ControlLabel>
             <FormControl
               value={this.state.password}
@@ -67,7 +66,7 @@ export default class LoginForm extends Component {
               type="password"
             />
           </FormGroup>
-          <Button id="spacing"
+          <Button
             block
             bsSize="large"
             disabled={!this.validateForm()}

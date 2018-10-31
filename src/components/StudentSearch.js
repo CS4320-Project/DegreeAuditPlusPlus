@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import '../styles/StudentSearch.css';
 import Home from './Home';
 import { Switch, Route } from 'react-router-dom';
@@ -40,6 +40,7 @@ export default class StudentSearch extends React.Component {
 	  
   render(){
     return(
+
       
         <div class="search-container">
         <h1>Search Student</h1>

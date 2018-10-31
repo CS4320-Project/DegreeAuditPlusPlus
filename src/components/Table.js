@@ -157,7 +157,7 @@ let EnhancedTableToolbar = props => {
         )}
       </div>
       <div className={classes.spacer} />
-      <div className={classes.actions}> 
+      <div className={classes.actions}>
           <Tooltip title="Filter list">
             <IconButton aria-label="Filter list">
               <FilterListIcon />
@@ -189,28 +189,26 @@ const styles = theme => ({
 });
 
 class EnhancedTable extends React.Component {
+
   state = {
     order: 'asc',
     orderBy: '',
     selected: [],
-    data: [
-      createData('CS1050', 'Completed', 'A'),
-      createData('CS2050', 'Completed', 'A'),
-      createData('CS4320', 'Completed', 'A'),
-      createData('CS2830', 'Completed', 'A'),
-      createData('CS3330', 'Completed', 'A'),
-      createData('CS3050', 'Completed', 'A'),
-      createData('CS4830', 'Completed', 'B'),
-      createData('IT4400', 'Incomplete', 'B'),
-      createData('IT2610', 'Incomplete', 'B'),
-      createData('IT1610', 'Incomplete', 'B'),
-      createData('IT2600', 'Incomplete', 'B'),
-      createData('IT3460', 'Incomplete', 'A'),
-      createData('IT4830', 'Incomplete', 'A'),
-    ],
+    data: [],
     page: 0,
     rowsPerPage: 5,
   };
+
+  componentDidMount(){
+    let scope = this;
+    this.props.courses.forEach(function(item){
+      let complete = item.completed ? 'Completed' : "Incomplete";
+      scope.setState(prevState => ({
+        data: [...prevState.data, createData(item.courseNumber, complete, item.gradeReceived)]
+      }));
+    });
+  }
+
 
   handleRequestSort = (event, property) => {
     const orderBy = property;
@@ -303,7 +301,7 @@ class EnhancedTable extends React.Component {
                       </TableCell>
                       <TableCell>{n.status}</TableCell>
                       <TableCell>{n.grade}</TableCell>
-                
+
                     </TableRow>
                   );
                 })}
