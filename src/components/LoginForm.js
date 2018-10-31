@@ -45,6 +45,15 @@ export default class LoginForm extends Component {
 
   render() {
     return (
+      <div>
+
+      <div class="jumbotron">
+          <div class="container">
+          <h1 class="display-4"><span class="yellow">DEGREE<span class="white">AUDIT</span>++</span></h1>
+          <p class="lead">An easy way to plan out your remaining semsters at the University of Missouri - Columbia.</p>
+        </div>
+      </div>
+
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
 
@@ -66,7 +75,8 @@ export default class LoginForm extends Component {
               type="password"
             />
           </FormGroup>
-          <Button
+
+          <Button id="loginButton"
             block
             bsSize="large"
             disabled={!this.validateForm()}
@@ -75,7 +85,9 @@ export default class LoginForm extends Component {
           >
             Login
           </Button>
+
         </form>
+      </div>
       </div>
     );
   }
