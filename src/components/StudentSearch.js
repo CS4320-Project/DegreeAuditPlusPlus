@@ -2,7 +2,7 @@ import React from "react";
 import '../styles/StudentSearch.css';
 import Home from './Home';
 import { Switch, Route } from 'react-router-dom';
-
+import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 
 export default class StudentSearch extends React.Component {
@@ -13,6 +13,7 @@ export default class StudentSearch extends React.Component {
     this.state = {
       studentNumber: ""    
     };
+
   }
 
 
@@ -22,6 +23,7 @@ export default class StudentSearch extends React.Component {
     });
   }
 	  
+
 	  handleSubmit = event => {
     event.preventDefault();
 	
@@ -42,21 +44,36 @@ export default class StudentSearch extends React.Component {
     return(
 
       
-        <div class="search-container">
+        <div className="StudentSearch">
         <h1>Search Student</h1>
-    <form class="textBox" onSubmit={this.handleSubmit}>
 		
-      <input
-		type="text" 
-		placeholder="Enter Student Number..."
-		name="search"
-		value={this.state.studentNumber}
-        onChange={this.handleChange} />
+		 <form onSubmit={this.handleSubmit}>
+
+          <FormGroup controlId="studentNumber" bsSize="large">
+     
+
+            <FormControl
+              autoFocus
+              type="studentNumber"
+              value={this.state.studentNumber}
+              onChange={this.handleChange}
+            />
+                 </FormGroup>
+		<Button
+            block
+            bsSize="large"
+            type="submit"
+			value = "Submit"
+          >
+           Search 
+          </Button>
+	
+        </form>
 		
-      <button type="submit" value = "Submit">→
-        </button>
-    </form>
-  </div>
+		
+		
+	</div>	
+		
         
         
       

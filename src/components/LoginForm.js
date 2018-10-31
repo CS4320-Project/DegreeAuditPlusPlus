@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-<<<<<<< HEAD
-import "../styles/Login.css";
+
+import "../styles/LoginForm.css";
 import Home from './Home';
 import StudentSearch from './StudentSearch'
 import { Switch, Route } from 'react-router-dom';
 
-=======
-import "../styles/LoginForm.css";
->>>>>>> a109276a7655a4c1a3f928ffc1486e0753bdfb61
+
+
+
 
 export default class LoginForm extends Component {
   constructor(props) {
