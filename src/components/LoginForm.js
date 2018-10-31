@@ -5,6 +5,7 @@ import Home from './Home';
 import StudentSearch from './StudentSearch'
 import { Switch, Route } from 'react-router-dom';
 
+
 export default class LoginForm extends Component {
   constructor(props) {
     super(props);
@@ -30,14 +31,16 @@ export default class LoginForm extends Component {
     event.preventDefault();
 	
 	  if (this.state.pawPrint == "sbc436" && this.state.password == "1234"){
-		<Route exact path='/home' component={Home}/>
+		  window.location = '/home';
+		  //<Route exact path='/home' component={Home}/>
 	  }
 	  else if (this.state.pawPrint == "NBalser" && this.state.password == "1234"){
-			  <Route exact path='/studentSearch' component={StudentSearch}/>
+			window.location = '/studentSearch'; 
+		 // <Route exact path='/studentSearch' component={StudentSearch}/>
 		  }
 	  
 	  else{
-		   alert('Username or password is incorrect! ' + this.state.pawPrint );
+		   alert('Username or password is incorrect! ' );
 	  }
 
   }
@@ -48,7 +51,7 @@ export default class LoginForm extends Component {
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
           <FormGroup id="spacing" controlId="pawPrint" bsSize="large">
-            <ControlLabel>PawPrint</ControlLabel>
+            <ControlLabel>Username</ControlLabel>
             <FormControl
               autoFocus
               type="pawPrint"
