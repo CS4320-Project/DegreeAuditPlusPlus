@@ -8,9 +8,9 @@ export default class Main extends React.Component {
     return(
       <main>
         <Switch>
-          <Route exact path='/home' component={Home}/>
-          <Route path='/' component={LoginForm}/>
-          <Route path='/login' component={LoginForm}/>
+          <Route exact path='/home' render={() => <Home student={this.props.student} childProps={this.props.childProps}/>} />
+          <Route path='/' render={() => <LoginForm childProps={this.props.childProps}/>}/>
+          <Route path='/login' render={() => <LoginForm childProps={this.props.childProps}/>} />
         </Switch>
       </main>
     );

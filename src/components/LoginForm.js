@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import "../styles/Login.css";
+import "../styles/LoginForm.css";
 
 export default class LoginForm extends Component {
   constructor(props) {
@@ -24,6 +24,11 @@ export default class LoginForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    console.dir(this.props);
+    if(this.state.pawPrint === 'sbc436'){
+      this.props.childProps.userHasAuthenticated(true);
+    } else {
+    }
   }
 
   render() {
@@ -39,7 +44,7 @@ export default class LoginForm extends Component {
 
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
-          <FormGroup id="spacing" controlId="pawPrint" bsSize="large">
+          <FormGroup controlId="pawPrint" bsSize="large">
             <ControlLabel>PawPrint</ControlLabel>
             <FormControl
               autoFocus
@@ -48,7 +53,7 @@ export default class LoginForm extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup id="spacing" controlId="password" bsSize="large">
+          <FormGroup controlId="password" bsSize="large">
             <ControlLabel>Password</ControlLabel>
             <FormControl
               value={this.state.password}

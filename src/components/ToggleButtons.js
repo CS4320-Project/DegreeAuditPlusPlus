@@ -2,7 +2,6 @@ import React from 'react';
 import {ButtonToolbar, Button} from 'react-bootstrap';
 import "../styles/ToggleButtons.css";
 
-
 export default class ToggleButtons extends React.Component {
   render(){
     return(
