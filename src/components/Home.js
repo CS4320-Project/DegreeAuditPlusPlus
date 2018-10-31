@@ -2,6 +2,7 @@ import React from "react";
 import UserInfo from './UserInfo';
 import StudentSearch from './StudentSearch';
 import ToggleButtons from './ToggleButtons';
+import Table from './Table.js';
 
 export default class Home extends React.Component{
   state = {users:[]}
@@ -12,7 +13,8 @@ export default class Home extends React.Component{
         <StudentSearch/>
         <h1>Welcome to DegreeAudit++</h1>
         <UserInfo student={this.props.student}/>
-	      <ToggleButtons/>
+	      <ToggleButtons />
+        <Table courses={this.props.student.courses}/>
       </div>
 
     );
