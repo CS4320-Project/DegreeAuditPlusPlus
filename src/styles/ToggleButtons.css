@@ -1,11 +1,12 @@
-Button{
+.toggleButton {
 	margin: 0px 60px 0px 60px;
-	padding: 100px;
-
 }
+
 #buttonDiv{
 	margin: auto;
 	width: 55%;
 	align-content: center;
-	
+	margin-left: 325px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }

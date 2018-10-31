@@ -1,4 +1,7 @@
-
+h3{
+  text-align: left;
+  margin-left: 350px;
+}
 
 .column{
   float: left;
@@ -20,7 +23,7 @@
 
 #wrapper{
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid grey;
   margin-left: 350px;
   margin-right: 350px;
   padding-left: 100px;
@@ -28,5 +31,4 @@
   padding-top: 50px;
   padding-bottom: 50px;
   border-radius: 10px;
-
 }

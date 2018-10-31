@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import "../styles/Login.css";
+import "../styles/LoginForm.css";
 
 export default class LoginForm extends Component {
   constructor(props) {
@@ -24,13 +24,27 @@ export default class LoginForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    console.dir(this.props);
+    if(this.state.pawPrint === 'sbc436'){
+      this.props.childProps.userHasAuthenticated(true);
+    } else {
+    }
   }
 
   render() {
     return (
+      <div>
+
+      <div class="jumbotron">
+          <div class="container">
+          <h1 class="display-4"><span class="yellow">DEGREE<span class="white">AUDIT</span>++</span></h1>
+          <p class="lead">An easy way to plan out your remaining semsters at the University of Missouri - Columbia.</p>
+        </div>
+      </div>
+
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
-          <FormGroup id="spacing" controlId="pawPrint" bsSize="large">
+          <FormGroup controlId="pawPrint" bsSize="large">
             <ControlLabel>PawPrint</ControlLabel>
             <FormControl
               autoFocus
@@ -39,7 +53,7 @@ export default class LoginForm extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup id="spacing" controlId="password" bsSize="large">
+          <FormGroup controlId="password" bsSize="large">
             <ControlLabel>Password</ControlLabel>
             <FormControl
               value={this.state.password}
@@ -47,7 +61,8 @@ export default class LoginForm extends Component {
               type="password"
             />
           </FormGroup>
-          <Button id="spacing"
+
+          <Button id="loginButton"
             block
             bsSize="large"
             disabled={!this.validateForm()}
@@ -55,7 +70,9 @@ export default class LoginForm extends Component {
           >
             Login
           </Button>
+
         </form>
+      </div>
       </div>
     );
   }
