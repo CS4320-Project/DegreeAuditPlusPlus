@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import UserInfo from './UserInfo';
 
 import StudentSearch from './StudentSearch';
 
@@ -17,13 +18,14 @@ export default class Home extends React.Component{
   render(){
     return(
       <div>
-    <StudentSearch/>
+        <StudentSearch/>
         <h1>Welcome to DegreeAudit++</h1>
         <h2>Users</h2>
         {this.state.users.map( user =>
           <div key={user.id}>{user.username}</div>
         )}
-	<ToggleButtons/>
+        <UserInfo/>
+	      <ToggleButtons/>
       </div>
 
     );
