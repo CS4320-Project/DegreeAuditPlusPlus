@@ -1,3 +1,4 @@
+/*
 .search-container button {
   float: auto;
   padding: 6px 10px;
@@ -7,5 +8,21 @@
   font-size: 17px;
   border: none;
   cursor: pointer;
-}
 
+}
+*/
+
+.StudentSearch form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+buttom{
+	 float: auto;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
