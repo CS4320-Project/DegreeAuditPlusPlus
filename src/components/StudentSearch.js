@@ -1,21 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import '../styles/StudentSearch.css';
 
 export default class StudentSearch extends React.Component {
   render(){
     return(
-      
-        <div class="search-container">
+      <div className="search-container">
         <h1>Search Student</h1>
-    <form class="textBox" onSubmit={this.handleSubmit}>
-      <input  type="text" placeholder="Enter Student Number..." name="search"/>
-      <button type="submit">→
-        </button>
-    </form>
-  </div>
-        
-        
-      
+        <form className="textBox" onSubmit={this.handleSubmit}>
+          <input  type="text" placeholder="Enter Student Number..." name="search"/>
+          <button type="submit">→
+          </button>
+        </form>
+      </div>
     );
   }
 }

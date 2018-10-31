@@ -11,8 +11,8 @@ export default class UserInfo extends React.Component {
           Student Information
         </h2>
       </div>
-      <div id = "wrapper" class = "clear">
-      <div class = "column" id = "left">
+      <div id="wrapper" className="clear">
+      <div className="column" id="left">
         <h4>
         <Label>Name</Label>
         </h4>
@@ -37,7 +37,7 @@ export default class UserInfo extends React.Component {
         </h4>
       </div>
 
-      <div class = "column" id = "right">
+      <div className="column" id="right">
         <h4>
         Sara Caponi
         </h4>
