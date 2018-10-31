@@ -6,11 +6,13 @@ export default class UserInfo extends React.Component {
   render() {
     return (
       <div>
+
       <div>
-        <h2>
+        <h3>
           Student Information
-        </h2>
+        </h3>
       </div>
+
       <div id = "wrapper" class = "clear">
       <div class = "column" id = "left">
         <h4>
@@ -63,6 +65,7 @@ export default class UserInfo extends React.Component {
       </div>
       </div>
       </div>
+
     );
   }
 }
