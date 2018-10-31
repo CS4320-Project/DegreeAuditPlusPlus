@@ -16,8 +16,8 @@ export default class Header extends React.Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem><Link to='home'>Home</Link></NavItem>
-              <NavItem><Link to='login'>Log Out</Link></NavItem>
+              <NavItem componentClass="span"><Link to='home'>Home</Link></NavItem>
+              <NavItem componentClass="span"><Link to='login'>Log Out</Link></NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -8,7 +8,7 @@ export default class Main extends React.Component {
     return(
       <main>
         <Switch>
-          <Route exact path='/home' component={Home}/>
+          <Route exact path='/home' render={() => <Home student={this.props.student}/>} />
           <Route path='/' component={LoginForm}/>
           <Route path='/login' component={LoginForm}/>
         </Switch>

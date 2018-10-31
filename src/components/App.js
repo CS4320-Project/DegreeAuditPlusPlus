@@ -1,16 +1,105 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import '../styles/App.css';
 import Header from './Header.js';
 import Main from './Main.js';
-import Table from './Table.js';
+
+const USER = {
+  pawPrint: 'sbc436',
+  firstName: 'Sara',
+  lastName: 'Caponi',
+  degreeProgram: 'Computer Science',
+  expectedGradDate: 'SP2020',
+  studentNumber: 14261685,
+  advisor: 'Nicholas Balser',
+  advisorEmail: 'BalserN@missouri.edu',
+  courses: [
+    {
+      courseNumber: 'CS1050',
+      courseTitle: '',
+      completed: true,
+      gradeReceived: 'A'
+    },
+    {
+      courseNumber: 'CS2050',
+      courseTitle: '',
+      completed: true,
+      gradeReceived: 'A'
+    },
+    {
+      courseNumber: 'CS4320',
+      courseTitle: '',
+      completed: true,
+      gradeReceived: 'A'
+    },
+    {
+      courseNumber: 'CS2830',
+      courseTitle: '',
+      completed: true,
+      gradeReceived: 'A'
+    },
+    {
+      courseNumber: 'CS3330',
+      courseTitle: '',
+      completed: true,
+      gradeReceived: 'A'
+    },
+    {
+      courseNumber: 'CS3050',
+      courseTitle: '',
+      completed: true,
+      gradeReceived: 'A'
+    },
+    {
+      courseNumber: 'CS4830',
+      courseTitle: '',
+      completed: true,
+      gradeReceived: 'B'
+    },
+    {
+      courseNumber: 'IT4400',
+      courseTitle: '',
+      completed: false,
+      gradeReceived: 'B'
+    },
+    {
+      courseNumber: 'IT2610',
+      courseTitle: '',
+      completed: false,
+      gradeReceived: 'B'
+    },
+    {
+      courseNumber: 'IT1610',
+      courseTitle: '',
+      completed: false,
+      gradeReceived: 'B'
+    },
+    {
+      courseNumber: 'IT2600',
+      courseTitle: '',
+      completed: false,
+      gradeReceived: 'B'
+    },
+    {
+      courseNumber: 'IT3460',
+      courseTitle: '',
+      completed: false,
+      gradeReceived: 'B'
+    },
+    {
+      courseNumber: 'IT4830',
+      courseTitle: '',
+      completed: false,
+      gradeReceived: 'B'
+    },
+  ]
+}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header/>
-        <Main/>        
+        <Main student={USER}/>
       </div>
     );
   }
