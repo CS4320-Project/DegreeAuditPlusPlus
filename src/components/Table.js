@@ -151,7 +151,7 @@ let EnhancedTableToolbar = props => {
             {numSelected} selected
           </Typography>
         ) : (
-          <Typography variant="h6" id="tableTitle">
+          <Typography variant="h6" id="tableTitle" >
             Degree Audit
           </Typography>
         )}
@@ -177,16 +177,18 @@ EnhancedTableToolbar = withStyles(toolbarStyles)(EnhancedTableToolbar);
 
 const styles = theme => ({
   root: {
-    width: '100%',
+    maxWidth: 800,
     marginTop: theme.spacing.unit * 3,
+    //padding: theme.spacing.unit * 2,
   },
   table: {
-    minWidth: 1020,
+    textAlign: 'center',
   },
   tableWrapper: {
     overflowX: 'auto',
   },
-});
+}); 
+
 
 class EnhancedTable extends React.Component {
 
