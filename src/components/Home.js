@@ -5,7 +5,7 @@ import StudentSearch from './StudentSearch';
 
 
 import ToggleButtons from './ToggleButtons';
-
+import Table from './Table.js';
 export default class Home extends React.Component{
   state = {users:[]}
 
@@ -26,6 +26,7 @@ export default class Home extends React.Component{
         )}
         <UserInfo/>
 	      <ToggleButtons/>
+        <Table></Table>
       </div>
 
     );
