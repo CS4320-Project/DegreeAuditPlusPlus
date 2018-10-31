@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+
 import "../styles/LoginForm.css";
+import Home from './Home';
+import StudentSearch from './StudentSearch'
+import { Switch, Route } from 'react-router-dom';
+
+
+
+
 
 export default class LoginForm extends Component {
   constructor(props) {
@@ -15,7 +23,8 @@ export default class LoginForm extends Component {
   validateForm() {
     return this.state.pawPrint.length > 0 && this.state.password.length > 0;
   }
-
+	
+	
   handleChange = event => {
     this.setState({
       [event.target.id]: event.target.value
@@ -24,12 +33,15 @@ export default class LoginForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+
     console.dir(this.props);
     if(this.state.pawPrint === 'sbc436'){
       this.props.childProps.userHasAuthenticated(true);
     } else {
     }
+
   }
+  
 
   render() {
     return (
@@ -44,8 +56,10 @@ export default class LoginForm extends Component {
 
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
+
           <FormGroup controlId="pawPrint" bsSize="large">
             <ControlLabel>PawPrint</ControlLabel>
+
             <FormControl
               autoFocus
               type="pawPrint"
@@ -67,6 +81,7 @@ export default class LoginForm extends Component {
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
+			value = "Submit"
           >
             Login
           </Button>
