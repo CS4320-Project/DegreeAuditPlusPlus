@@ -30,7 +30,7 @@ export default class LoginForm extends Component {
     return (
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
-          <FormGroup controlId="pawPrint" bsSize="large">
+          <FormGroup id="spacing" controlId="pawPrint" bsSize="large">
             <ControlLabel>PawPrint</ControlLabel>
             <FormControl
               autoFocus
@@ -39,7 +39,7 @@ export default class LoginForm extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
+          <FormGroup id="spacing" controlId="password" bsSize="large">
             <ControlLabel>Password</ControlLabel>
             <FormControl
               value={this.state.password}
@@ -47,7 +47,7 @@ export default class LoginForm extends Component {
               type="password"
             />
           </FormGroup>
-          <Button
+          <Button id="spacing"
             block
             bsSize="large"
             disabled={!this.validateForm()}

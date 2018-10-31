@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import Header from './Header.js';
 import Main from './Main.js';
+import Table from './Table.js';
 
 const USER = {
   pawPrint: 'sbc436',
