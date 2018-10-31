@@ -28,7 +28,8 @@ export default class StudentSearch extends React.Component {
     event.preventDefault();
 	
 	  if (this.state.studentNumber === "14261685" ){
-		<Route path='/home' component={Home}/>
+		//<Route path='/home' component={Home}/>
+		  window.location = '/home';
 	  }
 	  
 	  else{
