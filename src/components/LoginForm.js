@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "../styles/Login.css";
+import Home from './Home';
+import StudentSearch from './StudentSearch'
+import { Switch, Route } from 'react-router-dom';
 
 export default class LoginForm extends Component {
   constructor(props) {
@@ -15,7 +18,8 @@ export default class LoginForm extends Component {
   validateForm() {
     return this.state.pawPrint.length > 0 && this.state.password.length > 0;
   }
-
+	
+	
   handleChange = event => {
     this.setState({
       [event.target.id]: event.target.value
@@ -24,7 +28,20 @@ export default class LoginForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+	
+	  if (this.state.pawPrint == "sbc436" && this.state.password == "1234"){
+		<Route exact path='/home' component={Home}/>
+	  }
+	  else if (this.state.pawPrint == "NBalser" && this.state.password == "1234"){
+			  <Route exact path='/studentSearch' component={StudentSearch}/>
+		  }
+	  
+	  else{
+		   alert('Username or password is incorrect! ' + this.state.pawPrint );
+	  }
+
   }
+  
 
   render() {
     return (
@@ -52,6 +69,7 @@ export default class LoginForm extends Component {
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
+			value = "Submit"
           >
             Login
           </Button>
