@@ -6,7 +6,7 @@ import {Navbar, NavItem, Nav} from 'react-bootstrap';
 
 export default class Header extends React.Component {
   handleLogout = event => {
-    this.userHasAuthenticated(false);
+    this.props.childProps.userHasAuthenticated(false);
   }
 
   render(){
@@ -22,8 +22,12 @@ export default class Header extends React.Component {
           <Navbar.Collapse>
             <Nav pullRight>
               <NavItem componentClass="span"><Link to='home'>Home</Link></NavItem>
-              {this.props.isAuthenticated
-              ? <NavItem onClick={this.handleLogout} componentClass="span">Log Out</NavItem>
+              {this.props.childProps.isAuthenticated
+              ? <Fragment>
+                  <LinkContainer to="/login">
+                    <NavItem onClick={this.handleLogout} componentClass="span">Log Out</NavItem>
+                  </LinkContainer>
+                </Fragment>
               : <Fragment>
                   <LinkContainer to='/login'>
                     <NavItem>Log in</NavItem>

@@ -94,22 +94,26 @@ const USER = {
   ]
 }
 
+const storage = window.localStorage;
+
 class App extends Component {
   constructor(props){
     super(props);
 
     this.state = {
-      isAuthenticated: false
+      isAuthenticated: storage.getItem('isAuthenticated')
     };
   }
 
   userHasAuthenticated = authenticated => {
-    console.log("Authentication!");
     this.setState({isAuthenticated: authenticated});
+    storage.setItem('isAuthenticated', authenticated);
+    if(!authenticated){
+      window.location = '/login';
+    }
   }
 
   render() {
-
     const childProps = {
       isAuthenticated: this.state.isAuthenticated,
       userHasAuthenticated: this.userHasAuthenticated
