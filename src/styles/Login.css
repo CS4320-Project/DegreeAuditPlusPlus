@@ -8,3 +8,8 @@
     max-width: 320px;
   }
 }
+#spacing{
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+}
