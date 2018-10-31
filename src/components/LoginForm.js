@@ -24,13 +24,18 @@ export default class LoginForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    console.dir(this.props);
+    if(this.state.pawPrint === 'sbc436'){
+      this.props.childProps.userHasAuthenticated(true);
+    } else {
+    }
   }
 
   render() {
     return (
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
-          <FormGroup id="spacing" controlId="pawPrint" bsSize="large">
+          <FormGroup controlId="pawPrint" bsSize="large">
             <ControlLabel>PawPrint</ControlLabel>
             <FormControl
               autoFocus
@@ -39,7 +44,7 @@ export default class LoginForm extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup id="spacing" controlId="password" bsSize="large">
+          <FormGroup controlId="password" bsSize="large">
             <ControlLabel>Password</ControlLabel>
             <FormControl
               value={this.state.password}
@@ -47,7 +52,7 @@ export default class LoginForm extends Component {
               type="password"
             />
           </FormGroup>
-          <Button id="spacing"
+          <Button
             block
             bsSize="large"
             disabled={!this.validateForm()}
