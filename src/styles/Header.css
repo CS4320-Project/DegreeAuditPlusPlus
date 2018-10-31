@@ -1,5 +1,26 @@
+<<<<<<< HEAD
+.navbar-nav a{
+  color: white !important;
+
+}
+
+.dropdown-menu a{
+  color: white !important;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+a:hover {
+    background-color: grey;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 2px;
+=======
 .navbar-nav span[role=button] {
   padding: 15px;
   display: inline-block;
   line-height: 20px;
+>>>>>>> master
 }

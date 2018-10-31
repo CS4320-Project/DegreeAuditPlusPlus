@@ -39,6 +39,7 @@ export default class UserInfo extends React.Component {
           </div>
         </div>
       </div>
+
     );
   }
 }
