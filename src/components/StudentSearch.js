@@ -27,8 +27,8 @@ export default class StudentSearch extends React.Component {
 	  handleSubmit = event => {
     event.preventDefault();
 	
-	  if (this.state.studentNumber == "14261685" ){
-		<Route exact path='/home' component={Home}/>
+	  if (this.state.studentNumber === "14261685" ){
+		<Route path='/home' component={Home}/>
 	  }
 	  
 	  else{
