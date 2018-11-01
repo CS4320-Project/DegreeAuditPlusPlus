@@ -88,6 +88,7 @@ class FullWidthTabs extends React.Component {
     const { classes, theme } = this.props;
 
     return (
+    <div className="tabby">
       <MuiThemeProvider theme={theme}>
       <div className={classes.root}>
         <AppBar position="static" color="default">
@@ -108,15 +109,16 @@ class FullWidthTabs extends React.Component {
           index={this.state.value}
           onChangeIndex={this.handleChangeIndex}
         >
-      
+
           <TabContainer dir={theme.direction}><Table courses={this.getPastClasses(this.props.student.courses)}/></TabContainer>
           <TabContainer dir={theme.direction}><Table courses={this.getCurrentClasses(this.props.student.courses)}/></TabContainer>
           <TabContainer dir={theme.direction}><Table courses={this.getOutstandingClasses(this.props.student.courses)}/></TabContainer>
-          
+
         </SwipeableViews>
-        
+
       </div>
       </MuiThemeProvider>
+      </div>
     );
   }
 }

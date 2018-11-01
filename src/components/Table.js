@@ -18,6 +18,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import { lighten } from '@material-ui/core/styles/colorManipulator';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import "../styles/Tab.css";
 
 let counter = 0;
 function createData(courses, title, grade, credit) {
@@ -165,7 +166,7 @@ let EnhancedTableToolbar = props => {
           </Typography>
         ) : (
           <Typography variant="h6" id="tableTitle" >
-            Degree Audit
+            DegreeAudit++
           </Typography>
         )}
       </div>
@@ -200,7 +201,7 @@ const styles = theme => ({
   tableWrapper: {
     overflowX: 'auto',
   },
-}); 
+});
 
 
 class EnhancedTable extends React.Component {
