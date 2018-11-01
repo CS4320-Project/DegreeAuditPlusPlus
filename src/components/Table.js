@@ -50,6 +50,7 @@ function getSorting(order, orderBy) {
   return order === 'desc' ? (a, b) => desc(a, b, orderBy) : (a, b) => -desc(a, b, orderBy);
 }
 
+//determines what excactly will be displayed within the table
 const rows = [
   { id: 'courses', numeric: false, disablePadding: true, label: 'Course Number' },
   {id: 'title', disablePadding: false, label: 'Class' },
@@ -113,6 +114,21 @@ EnhancedTableHead.propTypes = {
   orderBy: PropTypes.string.isRequired,
   rowCount: PropTypes.number.isRequired,
 };
+
+
+{/*focuses on the design of the tables*/}
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#fadd45',
+    },
+    secondary: {
+      main: '#a6a6a6',
+    },
+  },
+});
+
+{/*focuses on the design of the tables*/}
 
 const toolbarStyles = theme => ({
   root: {

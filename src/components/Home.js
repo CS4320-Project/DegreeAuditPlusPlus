@@ -7,6 +7,7 @@ export default class Home extends React.Component{
 
   render(){
     return(
+      {/*calls the other files to display them on the declared page.*/}
       <div>
         <UserInfo student={this.props.student}/>
         <Tab student={this.props.student}></Tab>
