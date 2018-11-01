@@ -113,17 +113,6 @@ EnhancedTableHead.propTypes = {
   rowCount: PropTypes.number.isRequired,
 };
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#fadd45',
-    },
-    secondary: {
-      main: '#a6a6a6',
-    },
-  },
-});
-
 const toolbarStyles = theme => ({
   root: {
     paddingRight: theme.spacing.unit,
@@ -188,6 +177,17 @@ EnhancedTableToolbar.propTypes = {
 
 EnhancedTableToolbar = withStyles(toolbarStyles)(EnhancedTableToolbar);
 
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#fadd45',
+    },
+    secondary: {
+      main: '#fadd45',
+    },
+    direction: "rtl",
+  },
+});
 const styles = theme => ({
   root: {
     width: '100%',
