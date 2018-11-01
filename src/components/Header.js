@@ -22,6 +22,7 @@ export default class Header extends React.Component {
     }
 
     return(
+      //information that is displayed in the navigation bar
       <header>
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
