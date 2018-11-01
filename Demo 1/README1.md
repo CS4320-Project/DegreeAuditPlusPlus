@@ -1,5 +1,5 @@
 # DegreeAuditPlusPlus
-*Sara Caponi, Jamie Flores, Daniel Jaegers, Derek Rogers, Erika Eckfeld, Kate Gardner, Sohaila Bakr
+###Sara Caponi, Jamie Flores, Daniel Jaegers, Derek Rogers, Erika Eckfeld, Kate Gardner, Sohaila Bakr
 
 ## How to Run Our Program As a Student
 1. In order to run and use our program, open **Website:** HTTPS://TINYURL.COM/YC2JQ4SW 
