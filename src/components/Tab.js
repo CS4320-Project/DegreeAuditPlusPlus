@@ -22,7 +22,7 @@ TabContainer.propTypes = {
   dir: PropTypes.string.isRequired,
 };
 
-{/*captures the theme of the table*/}
+//captures the theme of the table
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -43,7 +43,7 @@ const styles = theme => ({
   },
 });
 
-{/*handles moving from tab to tab, and sets the state for the view.*/}
+//handles moving from tab to tab, and sets the state for the view.
 class FullWidthTabs extends React.Component {
   state = {
     value: 0,
@@ -88,8 +88,8 @@ class FullWidthTabs extends React.Component {
   render() {
     const { classes, theme } = this.props;
 
+    //the display of the tabs which is used for the css
     return (
-    {/*the display of the tabs which is used for the css*/}
     <div className="tabby">
       <MuiThemeProvider theme={theme}>
       <div className={classes.root}>

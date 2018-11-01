@@ -59,7 +59,7 @@ export default class UserInfo extends React.Component {
             </div>
           </div>
         </div>
-      </div> {/*only return one div*/}
+      </div> 
     );
   }
 }
