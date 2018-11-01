@@ -10,7 +10,6 @@ export default class Home extends React.Component{
     return(
       <div>
         <UserInfo student={this.props.student}/>
-	      <ToggleButtons />
         <Table courses={this.props.student.courses}/>
       </div>
 

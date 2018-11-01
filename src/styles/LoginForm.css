@@ -32,9 +32,9 @@
 
 #loginButton{
     margin: 0 auto;
-    width: 49%;
+    width: 100%;
     padding-top: 10px;
-    margin-top: 1%;
+    margin-top: 10%;
 }
 =======
 >>>>>>> master:src/styles/LoginForm.css

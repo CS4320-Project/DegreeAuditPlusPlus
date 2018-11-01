@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 h3{
-  text-align: left;
-  margin-left: 350px;
+  text-align: center;
+  color: #fadd45;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20pt;
+}
+
+.format{
+  color: #a6a6a6;
+  font-size: 15pt;
+  font-family: 'Oswald', sans-serif;
 }
 
 .column{
@@ -13,22 +23,48 @@ h3{
   clear: both;
 }
 
-#left{
-  text-align: left;
+.button{
+  background-color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25pt;
+  border-width: 0px;
+  border: none;
+  outline: none;
 }
 
-#right{
-  text-align: right;
+.button:hover {
+    color: #fadd45;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 2px;
 }
+
 
 #wrapper{
+  width: 1200px;
   text-align: center;
   border: 2px solid grey;
-  margin-left: 350px;
-  margin-right: 350px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin: 50px auto;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   border-radius: 10px;
 }
+
+/*
+.button:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+*/
