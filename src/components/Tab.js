@@ -32,6 +32,9 @@ const theme = createMuiTheme({
     },
     direction: "rtl",
   },
+  typography: {
+  useNextVariants: true,
+  }
 });
 
 const styles = theme => ({
@@ -40,6 +43,9 @@ const styles = theme => ({
     width: 1200,
     padding: 20,
   },
+  typography: {
+  useNextVariants: true,
+  }
 });
 
 class FullWidthTabs extends React.Component {

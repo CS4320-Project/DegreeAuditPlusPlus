@@ -188,6 +188,9 @@ const theme = createMuiTheme({
     },
     direction: "rtl",
   },
+  typography: {
+    useNextVariants: true,
+  }
 });
 const styles = theme => ({
   root: {
@@ -201,6 +204,9 @@ const styles = theme => ({
   tableWrapper: {
     overflowX: 'auto',
   },
+  typography: {
+  useNextVariants: true,
+  }
 });
 
 
