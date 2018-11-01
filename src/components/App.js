@@ -8,11 +8,13 @@ const USER = {
   firstName: 'Sara',
   lastName: 'Caponi',
   degreeProgram: 'Computer Science',
+  degreeMinor: 'Mathematics',
   expectedGradDate: 'SP2020',
   studentNumber: 14261685,
   advisor: 'Nicholas Balser',
   advisorEmail: 'BalserN@missouri.edu',
-  courses: [
+  advisorPhone: '573-882-2845',
+  courses:[
     {
       courseNumber: 'CS1050',
       courseTitle: '',
