@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 @media all and (min-width: 480px) {
-  .LoginForm {
-    padding: 60px 0;
+
+.LoginForm {
+    padding: 10px 0;
   }
 
-  .LoginForm form {
+.LoginForm form {
     margin: 0 auto;
     max-width: 320px;
   }
 }
-<<<<<<< HEAD:src/styles/Login.css
+
 #spacing{
   margin: 0 auto;
   width: 50%;
@@ -36,5 +37,3 @@
     padding-top: 10px;
     margin-top: 10%;
 }
-=======
->>>>>>> master:src/styles/LoginForm.css
