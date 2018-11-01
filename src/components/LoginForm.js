@@ -34,6 +34,9 @@ export default class LoginForm extends Component {
       this.props.childProps.userHasAuthenticated(true);
       window.location = '/studentSearch';
     }
+	  else {
+		  alert('Username or password is incorrect!');
+	  }
 
   }
 
