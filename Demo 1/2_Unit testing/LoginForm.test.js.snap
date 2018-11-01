@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="jumbotron"
+  >
+    <div
+      className="container"
+    >
+      <h1
+        className="display-4"
+      >
+        <span
+          className="yellow"
+        >
+          DEGREE
+          <span
+            className="white"
+          >
+            AUDIT
+          </span>
+          ++
+        </span>
+      </h1>
+      <p
+        className="lead"
+      >
+        An easy way to plan out your remaining semsters at the University of Missouri - Columbia.
+      </p>
+    </div>
+  </div>
+  <div
+    className="LoginForm"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="textHover form-group form-group-lg"
+      >
+        <label
+          className="control-label"
+          htmlFor="pawPrint"
+        >
+          PawPrint
+        </label>
+        <input
+          autoFocus={true}
+          className="form-control"
+          id="pawPrint"
+          onChange={[Function]}
+          type="pawPrint"
+          value=""
+        />
+      </div>
+      <div
+        className="textHover form-group form-group-lg"
+      >
+        <label
+          className="control-label"
+          htmlFor="password"
+        >
+          Password
+        </label>
+        <input
+          className="form-control"
+          id="password"
+          onChange={[Function]}
+          type="password"
+          value=""
+        />
+      </div>
+      <button
+        className="btn btn-lg btn-default btn-block"
+        disabled={true}
+        id="loginButton"
+        type="submit"
+        value="Submit"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 2`] = `
+<div>
+  <div
+    className="jumbotron"
+  >
+    <div
+      className="container"
+    >
+      <h1
+        className="display-4"
+      >
+        <span
+          className="yellow"
+        >
+          DEGREE
+          <span
+            className="white"
+          >
+            AUDIT
+          </span>
+          ++
+        </span>
+      </h1>
+      <p
+        className="lead"
+      >
+        An easy way to plan out your remaining semsters at the University of Missouri - Columbia.
+      </p>
+    </div>
+  </div>
+  <div
+    className="LoginForm"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="textHover form-group form-group-lg"
+      >
+        <label
+          className="control-label"
+          htmlFor="pawPrint"
+        >
+          PawPrint
+        </label>
+        <input
+          autoFocus={true}
+          className="form-control"
+          id="pawPrint"
+          onChange={[Function]}
+          type="pawPrint"
+          value=""
+        />
+      </div>
+      <div
+        className="textHover form-group form-group-lg"
+      >
+        <label
+          className="control-label"
+          htmlFor="password"
+        >
+          Password
+        </label>
+        <input
+          className="form-control"
+          id="password"
+          onChange={[Function]}
+          type="password"
+          value=""
+        />
+      </div>
+      <button
+        className="btn btn-lg btn-default btn-block"
+        disabled={true}
+        id="loginButton"
+        type="submit"
+        value="Submit"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>
+`;
