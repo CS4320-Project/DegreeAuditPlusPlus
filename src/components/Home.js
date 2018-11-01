@@ -1,6 +1,5 @@
 import React from "react";
 import UserInfo from './UserInfo';
-import StudentSearch from './StudentSearch';
 import ToggleButtons from './ToggleButtons';
 import Table from './Table.js';
 
