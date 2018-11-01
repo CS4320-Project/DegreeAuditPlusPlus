@@ -6,7 +6,7 @@ import {Navbar, NavItem, Nav} from 'react-bootstrap';
 
 export default class Header extends React.Component {
   handleLogout = event => {
-    this.props.childProps.userHasAuthenticated(false);
+    this.props.childProps.userHasAuthenticated(false, null);
   }
 
   render(){

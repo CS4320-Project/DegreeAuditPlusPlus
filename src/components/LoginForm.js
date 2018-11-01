@@ -26,18 +26,23 @@ export default class LoginForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    console.dir(this.props);
-    if(this.state.pawPrint === 'sbc436'){
-      this.props.childProps.userHasAuthenticated(true);
-      window.location = '/home';
-    } else if(this.state.pawPrint === 'nbalser') {
-      this.props.childProps.userHasAuthenticated(true);
-      window.location = '/studentSearch';
-    }
-	  else {
-		  alert('Username or password is incorrect!');
-	  }
+    fetch('/api/users/' + this.state.pawPrint)
+      .then(res => res.json())
+      .then(res => {
+        if(res.error){
+          alert('Username or password is incorrect');
+        } else {
+          this.props.childProps.userHasAuthenticated(true, res);
+          if(res.userType === 'student'){
+            window.location = '/home';
+          }
+          if(res.userType === 'advisor'){
+            window.location = '/studentSearch';
+          }
+        }
+      });
 
+    console.dir(this.props);
   }
 
 
