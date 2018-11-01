@@ -15,7 +15,7 @@ export default class Home extends React.Component{
 	      <ToggleButtons />
         <Tab></Tab>
         <Table courses={this.props.student.courses}/>
-        
+      
        
         
 

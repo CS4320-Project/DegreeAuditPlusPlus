@@ -6,6 +6,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import Table from './Table';
+import UserInfo from './UserInfo';
 
 function TabContainer({ children, dir }) {
   return (
@@ -66,10 +68,13 @@ class FullWidthTabs extends React.Component {
           index={this.state.value}
           onChangeIndex={this.handleChangeIndex}
         >
-          <TabContainer dir={theme.direction}>List courses taken</TabContainer>
+      
+          <TabContainer dir={theme.direction}>Courses</TabContainer>
           <TabContainer dir={theme.direction}>list courses enrolled</TabContainer>
           <TabContainer dir={theme.direction}>list courses outstanding</TabContainer>
+          
         </SwipeableViews>
+        
       </div>
     );
   }
