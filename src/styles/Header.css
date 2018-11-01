@@ -1,6 +1,5 @@
 .navbar-nav a{
   color: white !important;
-
 }
 
 .dropdown-menu a{
@@ -11,9 +10,16 @@
   color: #ffffff !important;
 }
 
-a:hover {
-    background-color: grey;
+.hlButton{
+    padding-top: 13px;
     text-decoration: none;
-    padding: 2px;
-    border-radius: 2px;
+    color: white;
+    margin-left: 25px;
+}
+
+.hlButton:hover {
+  color: #fadd45;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
 }

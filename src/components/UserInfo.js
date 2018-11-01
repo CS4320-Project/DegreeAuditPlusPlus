@@ -16,17 +16,17 @@ export default class UserInfo extends React.Component {
       <div>
 
       <p>
-        <button class="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        STUDENT INFORMATION + 
+        <button className="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        STUDENT INFORMATION +
         </button>
       </p>
 
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            <div class="container">
-              <div class="row">
+      <div className="collapse" id="collapseExample">
+        <div className="card card-body">
+            <div className="container">
+              <div className="row">
 
-                <div class="col-sm-4">
+                <div className="col-sm-4">
                   <h2 className="format"><b>Name</b></h2>
                       <h4>{this.props.student.firstName} {this.props.student.lastName}</h4>
                   <h2 className="format"><b>Degree Program, Major</b></h2>
@@ -35,7 +35,7 @@ export default class UserInfo extends React.Component {
                       <h4>{this.props.student.advisor}</h4>
                 </div>
 
-                <div class="col-sm-4">
+                <div className="col-sm-4">
                   <h2 className="format"><b>Email</b></h2>
                       <h4>{this.props.student.pawPrint}@mail.missouri.edu</h4>
                   <h2 className="format"><b>Degree Program, Minor</b></h2>
@@ -44,7 +44,7 @@ export default class UserInfo extends React.Component {
                       <h4>{this.props.student.advisorEmail}</h4>
                 </div>
 
-                <div class="col-sm-4">
+                <div className="col-sm-4">
                   <h2 className="format"><b>Student Number</b></h2>
                     <h4>{this.props.student.studentNumber}</h4>
                   <h2 className="format"><b>Expected Graduation Day</b></h2>
