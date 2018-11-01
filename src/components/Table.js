@@ -50,6 +50,7 @@ function getSorting(order, orderBy) {
   return order === 'desc' ? (a, b) => desc(a, b, orderBy) : (a, b) => -desc(a, b, orderBy);
 }
 
+//determines what excactly will be displayed within the table
 const rows = [
   { id: 'courses', numeric: false, disablePadding: true, label: 'Course Number' },
   {id: 'title', disablePadding: false, label: 'Class' },

@@ -12,10 +12,10 @@ export default class LoginForm extends Component {
     };
   }
 
+  {/*verifies the user has entered information in both the username and password fields*/}
   validateForm() {
     return this.state.pawPrint.length > 0 && this.state.password.length > 0;
   }
-
 
   handleChange = event => {
     this.setState({
@@ -26,6 +26,7 @@ export default class LoginForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
+  {/*used for quick demo demonstration*/}
     console.dir(this.props);
     if(this.state.pawPrint === 'sbc436'){
       this.props.childProps.userHasAuthenticated(true);
@@ -36,6 +37,7 @@ export default class LoginForm extends Component {
     }
 	  else {
 		  alert('Username or password is incorrect!');
+        {/*alerts the user that invalid information has been entered.*/}
 	  }
 
   }
@@ -45,6 +47,7 @@ export default class LoginForm extends Component {
     return (
       <div>
 
+        {/*Main Heading on the main page of the website to welcome the users.*/}
       <div className="jumbotron">
           <div className="container">
           <h1 className="display-4"><span className="yellow">DEGREE<span className="white">AUDIT</span>++</span></h1>
@@ -52,6 +55,7 @@ export default class LoginForm extends Component {
         </div>
       </div>
 
+        {/*provides text fields for the user to enter in their username(pawPrint) and then their password*/}
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
 
@@ -74,6 +78,7 @@ export default class LoginForm extends Component {
             />
           </FormGroup>
 
+            {/*loginButton to allow the user to submit their individualized information*/}
           <Button id="loginButton"
             block
             bsSize="large"
