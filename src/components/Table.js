@@ -19,9 +19,9 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 import { lighten } from '@material-ui/core/styles/colorManipulator';
 
 let counter = 0;
-function createData(courses, status, grade) {
+function createData(courses, title, status, grade, credit) {
   counter += 1;
-  return { id: counter, courses, status, grade};
+  return { id: counter, courses, title, status, grade, credit};
 }
 
 function desc(a, b, orderBy) {
@@ -49,9 +49,11 @@ function getSorting(order, orderBy) {
 }
 
 const rows = [
-  { id: 'courses', numeric: false, disablePadding: true, label: 'Courses' },
+  { id: 'courses', numeric: false, disablePadding: true, label: 'Course Number' },
+  {id: 'title', disablePadding: false, label: 'Class' },
   { id: 'status', disablePadding: false, label: 'Status' },
   { id: 'grade', disablePadding: false, label: 'Grade' },
+  {id: 'credit', disablePadding: false, label: 'Credits' },
 ];
 
 class EnhancedTableHead extends React.Component {
@@ -204,9 +206,8 @@ class EnhancedTable extends React.Component {
   componentDidMount(){
     let scope = this;
     this.props.courses.forEach(function(item){
-      let complete = item.completed ? 'Completed' : "Incomplete";
       scope.setState(prevState => ({
-        data: [...prevState.data, createData(item.courseNumber, complete, item.gradeReceived)]
+        data: [...prevState.data, createData(item.courseNumber, item.courseTitle, item.completed, item.gradeReceived, item.credit)]
       }));
     });
   }
@@ -301,8 +302,10 @@ class EnhancedTable extends React.Component {
                       <TableCell component="th" scope="row" padding="none">
                         {n.courses}
                       </TableCell>
+                      <TableCell>{n.title}</TableCell>
                       <TableCell>{n.status}</TableCell>
                       <TableCell>{n.grade}</TableCell>
+                      <TableCell>{n.credit}</TableCell>
 
                     </TableRow>
                   );

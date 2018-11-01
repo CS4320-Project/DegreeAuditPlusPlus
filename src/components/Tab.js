@@ -25,7 +25,7 @@ TabContainer.propTypes = {
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 700,
+    width: 1200,
     padding: 20,
   },
 });
@@ -44,6 +44,34 @@ class FullWidthTabs extends React.Component {
   handleChangeIndex = index => {
     this.setState({ value: index });
   };
+
+  getPastClasses=(courses) =>{
+    let pastClasses = [];
+    courses.forEach(function(course){
+      if (course.completed === "past") {
+        pastClasses.push(course);
+      }
+    });
+    return pastClasses;
+  }
+  getCurrentClasses=(courses) =>{
+    let currentClasses = [];
+    courses.forEach(function(course){
+      if (course.completed === "current") {
+        currentClasses.push(course);
+      }
+    });
+    return currentClasses;
+  }
+  getOutstandingClasses=(courses) =>{
+    let outstandingClasses = [];
+    courses.forEach(function(course){
+      if (course.completed === "outstanding") {
+        outstandingClasses.push(course);
+      }
+    });
+    return outstandingClasses;
+  }
 
   render() {
     const { classes, theme } = this.props;
@@ -69,9 +97,9 @@ class FullWidthTabs extends React.Component {
           onChangeIndex={this.handleChangeIndex}
         >
       
-          <TabContainer dir={theme.direction}>Courses</TabContainer>
-          <TabContainer dir={theme.direction}>list courses enrolled</TabContainer>
-          <TabContainer dir={theme.direction}>list courses outstanding</TabContainer>
+          <TabContainer dir={theme.direction}><Table courses={this.getPastClasses(this.props.student.courses)}/></TabContainer>
+          <TabContainer dir={theme.direction}><Table courses={this.getCurrentClasses(this.props.student.courses)}/></TabContainer>
+          <TabContainer dir={theme.direction}><Table courses={this.getOutstandingClasses(this.props.student.courses)}/></TabContainer>
           
         </SwipeableViews>
         

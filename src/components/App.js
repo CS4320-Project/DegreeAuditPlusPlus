@@ -8,11 +8,13 @@ const USER = {
   firstName: 'Sara',
   lastName: 'Caponi',
   degreeProgram: 'Computer Science',
+  degreeMinor: 'Mathematics',
   expectedGradDate: 'SP2020',
   studentNumber: 14261685,
   advisor: 'Nicholas Balser',
   advisorEmail: 'BalserN@missouri.edu',
-  courses: [
+  advisorPhone: '573-882-2845',
+  courses:[
     {
       courseNumber: 'CS1050',
       courseTitle: '',
@@ -95,22 +97,27 @@ const USER = {
 }
 
 
+
+const storage = window.localStorage;
+
 class App extends Component {
   constructor(props){
     super(props);
 
     this.state = {
-      isAuthenticated: false
+      isAuthenticated: storage.getItem('isAuthenticated')
     };
   }
 
   userHasAuthenticated = authenticated => {
-    console.log("Authentication!");
     this.setState({isAuthenticated: authenticated});
+    storage.setItem('isAuthenticated', authenticated);
+    if(!authenticated){
+      window.location = '/login';
+    }
   }
 
   render() {
-
     const childProps = {
       isAuthenticated: this.state.isAuthenticated,
       userHasAuthenticated: this.userHasAuthenticated
