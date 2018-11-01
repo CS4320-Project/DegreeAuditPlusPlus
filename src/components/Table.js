@@ -116,6 +116,7 @@ EnhancedTableHead.propTypes = {
 };
 
 
+
 {/*focuses on the design of the tables*/}
 const theme = createMuiTheme({
   palette: {
