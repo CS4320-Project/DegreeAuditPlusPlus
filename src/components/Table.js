@@ -115,7 +115,7 @@ EnhancedTableHead.propTypes = {
   rowCount: PropTypes.number.isRequired,
 };
 
-//focuses on the design of the tables
+{/*focuses on the design of the tables*/}
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -127,7 +127,7 @@ const theme = createMuiTheme({
   },
 });
 
-//focuses on the design of the tables
+{/*focuses on the design of the tables*/}
 const toolbarStyles = theme => ({
   root: {
     paddingRight: theme.spacing.unit,

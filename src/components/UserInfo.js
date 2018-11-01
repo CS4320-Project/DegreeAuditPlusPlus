@@ -15,7 +15,7 @@ export default class UserInfo extends React.Component {
       <div>
 
       <p>
-      //Headering for the Home page, and collapse information.
+    {/*Headering for the Home page, and collapse information.*/}
         <button className="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         STUDENT INFORMATION +
         </button>
@@ -26,7 +26,7 @@ export default class UserInfo extends React.Component {
             <div className="container">
               <div className="row">
 
-                  //calls all the information for a student determined by the App.js file
+                  {/*calls all the information for a student determined by the App.js file*/}
                 <div className="col-sm-4">
                   <h2 className="format"><b>Name</b></h2>
                       <h4>{this.props.student.firstName} {this.props.student.lastName}</h4>
@@ -36,7 +36,7 @@ export default class UserInfo extends React.Component {
                       <h4>{this.props.student.advisor}</h4>
                 </div>
 
-                  //calls all the information for a student determined by the App.js file
+                  {/*calls all the information for a student determined by the App.js file*/}
                 <div className="col-sm-4">
                   <h2 className="format"><b>Email</b></h2>
                       <h4>{this.props.student.pawPrint}@mail.missouri.edu</h4>
@@ -46,7 +46,7 @@ export default class UserInfo extends React.Component {
                       <h4>{this.props.student.advisorEmail}</h4>
                 </div>
 
-                //calls all the information for a student determined by the App.js file
+                {/*calls all the information for a student determined by the App.js file*/}
                 <div className="col-sm-4">
                   <h2 className="format"><b>Student Number</b></h2>
                     <h4>{this.props.student.studentNumber}</h4>
@@ -59,7 +59,7 @@ export default class UserInfo extends React.Component {
             </div>
           </div>
         </div>
-      </div> //only return one div
+      </div> {/*only return one div*/}
     );
   }
 }
