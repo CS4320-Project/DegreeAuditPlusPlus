@@ -3,6 +3,13 @@ import '../styles/App.css';
 import Header from './Header.js';
 import Main from './Main.js';
 
+/*
+  This file holds our current information
+  that is used to fill the tables on our
+  webpage. It hold all the student information
+  that is displayed to the student and the advisor.
+*/
+
 const USER = {
   pawPrint: 'sbc436',
   firstName: 'Sara',
@@ -108,8 +115,6 @@ const USER = {
     },
   ]
 }
-
-
 
 const storage = window.localStorage;
 
