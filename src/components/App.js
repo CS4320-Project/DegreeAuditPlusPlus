@@ -17,81 +17,94 @@ const USER = {
   courses:[
     {
       courseNumber: 'CS1050',
-      courseTitle: '',
-      completed: true,
-      gradeReceived: 'A'
+      courseTitle: 'Algorithm Design and Programming I',
+      completed: 'past',
+      gradeReceived: 'A',
+      credit: 4,
     },
     {
       courseNumber: 'CS2050',
-      courseTitle: '',
-      completed: true,
-      gradeReceived: 'A'
+      courseTitle: 'Algorithm Design and Programming II',
+      completed: 'past',
+      gradeReceived: 'B-',
+      credit: 4,
     },
     {
       courseNumber: 'CS4320',
-      courseTitle: '',
-      completed: true,
-      gradeReceived: 'A'
+      courseTitle: 'Software Engineering I',
+      completed: 'current',
+      gradeReceived: '-',
+      credit: 3,
     },
     {
       courseNumber: 'CS2830',
-      courseTitle: '',
-      completed: true,
-      gradeReceived: 'A'
+      courseTitle: 'Introduction to the Internet, WWW and Multimedia Systems',
+      completed: 'past',
+      gradeReceived: 'A',
+      credit: 3,
     },
     {
       courseNumber: 'CS3330',
-      courseTitle: '',
-      completed: true,
-      gradeReceived: 'A'
+      courseTitle: 'Object Oriented Programming',
+      completed: 'past',
+      gradeReceived: 'A-',
+      credit: 3,
     },
     {
       courseNumber: 'CS3050',
-      courseTitle: '',
-      completed: true,
-      gradeReceived: 'A'
+      courseTitle: 'Advanced Algorithm Design',
+      completed: 'past',
+      gradeReceived: 'A',
+      credit: 3,
     },
     {
       courseNumber: 'CS4830',
-      courseTitle: '',
-      completed: true,
-      gradeReceived: 'B'
+      courseTitle: 'Science and Engineering of the World Wide Web',
+      completed: 'outstanding',
+      gradeReceived: '-',
+      credit: 3,
     },
     {
       courseNumber: 'IT4400',
-      courseTitle: '',
-      completed: false,
-      gradeReceived: 'B'
+      courseTitle: 'C#/.NET Development',
+      completed: 'outstanding',
+      gradeReceived: '-',
+      credit: 3,
     },
     {
       courseNumber: 'IT2610',
-      courseTitle: '',
-      completed: false,
-      gradeReceived: 'B'
+      courseTitle: 'Audio/Video I',
+      completed: 'current',
+      gradeReceived: '-',
+      credit: 3,
     },
     {
       courseNumber: 'IT1610',
-      courseTitle: '',
-      completed: false,
-      gradeReceived: 'B'
+      courseTitle: 'Introduction to Entertainment Media',
+      completed: 'current',
+      gradeReceived: '-',
+      credit: 3,
     },
     {
       courseNumber: 'IT2600',
-      courseTitle: '',
-      completed: false,
-      gradeReceived: 'B'
+      courseTitle: 'Digital Multimedia',
+      completed: 'current',
+      gradeReceived: '-',
+      credit: 3,
     },
     {
-      courseNumber: 'IT3460',
-      courseTitle: '',
-      completed: false,
-      gradeReceived: 'B'
+      courseNumber: 'CS4970',
+      courseTitle: 'Senior Capstone Design I',
+      completed: 'outstanding',
+      gradeReceived: '-',
+      credit: 3,
     },
     {
-      courseNumber: 'IT4830',
-      courseTitle: '',
-      completed: false,
-      gradeReceived: 'B'
+      courseNumber: 'CS4980',
+      courseTitle: 'Senior Capstone Design II',
+      completed: 'outstanding',
+      gradeReceived: '-',
+      credit: 3,
     },
   ]
 }

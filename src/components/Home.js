@@ -11,9 +11,8 @@ export default class Home extends React.Component{
     return(
       <div>
         <UserInfo student={this.props.student}/>
-
         <Tab student={this.props.student}></Tab>
-        <Table courses={this.props.student.courses}/>
+      
         
       </div>
 

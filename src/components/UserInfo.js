@@ -17,7 +17,9 @@ export default class UserInfo extends React.Component {
 
       <p>
         <button className="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
         STUDENT INFORMATION + 
+
         </button>
       </p>
 

@@ -13,19 +13,21 @@ export default class Header extends React.Component {
     return(
       <header>
         <Navbar inverse collapseOnSelect>
+
           <Navbar.Header>
             <Navbar.Brand>
               <Link to="/home">DegreeAudit++</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
+
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem componentClass="span"><Link to='home'>Home</Link></NavItem>
+              <NavItem componentClass="span" className="hlButton"><Link to='home'>Home</Link></NavItem>
               {this.props.childProps.isAuthenticated
               ? <Fragment>
                   <LinkContainer to="/login">
-                    <NavItem onClick={this.handleLogout} componentClass="span">Log Out</NavItem>
+                    <NavItem onClick={this.handleLogout} componentClass="span" className="hlButton">Log Out</NavItem>
                   </LinkContainer>
                 </Fragment>
               : <Fragment>

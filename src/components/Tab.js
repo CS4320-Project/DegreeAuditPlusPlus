@@ -8,6 +8,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Table from './Table';
 import UserInfo from './UserInfo';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 function TabContainer({ children, dir }) {
   return (
@@ -22,6 +23,18 @@ TabContainer.propTypes = {
   dir: PropTypes.string.isRequired,
 };
 
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#fadd45',
+    },
+    secondary: {
+      main: '#fadd45',
+    },
+    direction: "rtl",
+  },
+});
+
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
@@ -29,8 +42,6 @@ const styles = theme => ({
     padding: 20,
   },
 });
-
-
 
 class FullWidthTabs extends React.Component {
   state = {
@@ -77,6 +88,7 @@ class FullWidthTabs extends React.Component {
     const { classes, theme } = this.props;
 
     return (
+      <MuiThemeProvider theme={theme}>
       <div className={classes.root}>
         <AppBar position="static" color="default">
           <Tabs
@@ -104,6 +116,7 @@ class FullWidthTabs extends React.Component {
         </SwipeableViews>
         
       </div>
+      </MuiThemeProvider>
     );
   }
 }
