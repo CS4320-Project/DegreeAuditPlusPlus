@@ -10,10 +10,20 @@ export default class Header extends React.Component {
   }
 
   render(){
+
+    // Determine which login button to display
+    let loginButton;
+    if(this.props.childProps.isAuthenticated === 'true'){
+      console.log("Log out");
+      loginButton = <Fragment><LinkContainer to="/login"><NavItem onClick={this.handleLogout} componentClass="span" className="hlButton">Log Out</NavItem></LinkContainer></Fragment>;
+    } else {
+      console.log("Log in");
+      loginButton = <Fragment><LinkContainer to='/login'><NavItem componentClass="span" className="hlButton">Log in</NavItem></LinkContainer></Fragment>;
+    }
+
     return(
       <header>
         <Navbar inverse collapseOnSelect>
-
           <Navbar.Header>
             <Navbar.Brand>
               <Link to="/home">DegreeAudit++</Link>
@@ -24,18 +34,7 @@ export default class Header extends React.Component {
           <Navbar.Collapse>
             <Nav pullRight>
               <NavItem componentClass="span" className="hlButton"><Link to='home'>Home</Link></NavItem>
-              {this.props.childProps.isAuthenticated
-              ? <Fragment>
-                  <LinkContainer to="/login">
-                    <NavItem onClick={this.handleLogout} componentClass="span" className="hlButton">Log Out</NavItem>
-                  </LinkContainer>
-                </Fragment>
-              : <Fragment>
-                  <LinkContainer to='/login'>
-                    <NavItem>Log in</NavItem>
-                  </LinkContainer>
-                </Fragment>}
-
+              {loginButton}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
