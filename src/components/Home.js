@@ -1,7 +1,8 @@
 import React from "react";
 import UserInfo from './UserInfo';
 import ToggleButtons from './ToggleButtons';
-import Table from './Table.js';
+import Table from './Table';
+import Tab from './Tab';
 
 export default class Home extends React.Component{
   state = {users:[]}
@@ -10,6 +11,9 @@ export default class Home extends React.Component{
     return(
       <div>
         <UserInfo student={this.props.student}/>
+        <Tab student={this.props.student}></Tab>
+      
+        
       </div>
 
     );

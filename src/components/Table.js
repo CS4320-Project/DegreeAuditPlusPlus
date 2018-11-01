@@ -17,11 +17,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import { lighten } from '@material-ui/core/styles/colorManipulator';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 let counter = 0;
-function createData(courses, status, grade) {
+function createData(courses, title, grade, credit) {
   counter += 1;
-  return { id: counter, courses, status, grade};
+  return { id: counter, courses, title, grade, credit};
 }
 
 function desc(a, b, orderBy) {
@@ -49,9 +50,10 @@ function getSorting(order, orderBy) {
 }
 
 const rows = [
-  { id: 'courses', numeric: false, disablePadding: true, label: 'Courses' },
-  { id: 'status', disablePadding: false, label: 'Status' },
+  { id: 'courses', numeric: false, disablePadding: true, label: 'Course Number' },
+  {id: 'title', disablePadding: false, label: 'Class' },
   { id: 'grade', disablePadding: false, label: 'Grade' },
+  {id: 'credit', disablePadding: false, label: 'Credits' },
 ];
 
 class EnhancedTableHead extends React.Component {
@@ -111,6 +113,17 @@ EnhancedTableHead.propTypes = {
   rowCount: PropTypes.number.isRequired,
 };
 
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#fadd45',
+    },
+    secondary: {
+      main: '#a6a6a6',
+    },
+  },
+});
+
 const toolbarStyles = theme => ({
   root: {
     paddingRight: theme.spacing.unit,
@@ -129,7 +142,7 @@ const toolbarStyles = theme => ({
     flex: '1 1 100%',
   },
   actions: {
-    color: theme.palette.text.secondary,
+    color: '#fadd45',
   },
   title: {
     flex: '0 0 auto',
@@ -151,7 +164,7 @@ let EnhancedTableToolbar = props => {
             {numSelected} selected
           </Typography>
         ) : (
-          <Typography variant="h6" id="tableTitle">
+          <Typography variant="h6" id="tableTitle" >
             Degree Audit
           </Typography>
         )}
@@ -179,6 +192,7 @@ const styles = theme => ({
   root: {
     width: '100%',
     marginTop: theme.spacing.unit * 3,
+    //padding: theme.spacing.unit * 2,
   },
   table: {
     minWidth: 1020,
@@ -186,7 +200,8 @@ const styles = theme => ({
   tableWrapper: {
     overflowX: 'auto',
   },
-});
+}); 
+
 
 class EnhancedTable extends React.Component {
 
@@ -202,9 +217,8 @@ class EnhancedTable extends React.Component {
   componentDidMount(){
     let scope = this;
     this.props.courses.forEach(function(item){
-      let complete = item.completed ? 'Completed' : "Incomplete";
       scope.setState(prevState => ({
-        data: [...prevState.data, createData(item.courseNumber, complete, item.gradeReceived)]
+        data: [...prevState.data, createData(item.courseNumber, item.courseTitle, item.gradeReceived, item.credit)]
       }));
     });
   }
@@ -266,6 +280,7 @@ class EnhancedTable extends React.Component {
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, data.length - page * rowsPerPage);
 
     return (
+      <MuiThemeProvider theme={theme}>
       <Paper className={classes.root}>
         <EnhancedTableToolbar numSelected={selected.length} />
         <div className={classes.tableWrapper}>
@@ -299,8 +314,9 @@ class EnhancedTable extends React.Component {
                       <TableCell component="th" scope="row" padding="none">
                         {n.courses}
                       </TableCell>
-                      <TableCell>{n.status}</TableCell>
+                      <TableCell>{n.title}</TableCell>
                       <TableCell>{n.grade}</TableCell>
+                      <TableCell>{n.credit}</TableCell>
 
                     </TableRow>
                   );
@@ -328,6 +344,7 @@ class EnhancedTable extends React.Component {
           onChangeRowsPerPage={this.handleChangeRowsPerPage}
         />
       </Paper>
+      </MuiThemeProvider>
     );
   }
 }

@@ -33,7 +33,7 @@ const USER = {
       courseNumber: 'CS4320',
       courseTitle: 'Software Engineering I',
       completed: 'current',
-      gradeReceived: 'A+++',
+      gradeReceived: '-',
       credit: 3,
     },
     {
@@ -61,53 +61,55 @@ const USER = {
       courseNumber: 'CS4830',
       courseTitle: 'Science and Engineering of the World Wide Web',
       completed: 'outstanding',
-      gradeReceived: 'B',
+      gradeReceived: '-',
       credit: 3,
     },
     {
       courseNumber: 'IT4400',
       courseTitle: 'C#/.NET Development',
       completed: 'outstanding',
-      gradeReceived: 'A+',
+      gradeReceived: '-',
       credit: 3,
     },
     {
       courseNumber: 'IT2610',
       courseTitle: 'Audio/Video I',
       completed: 'current',
-      gradeReceived: 'B',
+      gradeReceived: '-',
       credit: 3,
     },
     {
       courseNumber: 'IT1610',
       courseTitle: 'Introduction to Entertainment Media',
       completed: 'current',
-      gradeReceived: 'A',
+      gradeReceived: '-',
       credit: 3,
     },
     {
       courseNumber: 'IT2600',
       courseTitle: 'Digital Multimedia',
       completed: 'current',
-      gradeReceived: 'A-',
+      gradeReceived: '-',
       credit: 3,
     },
     {
       courseNumber: 'CS4970',
       courseTitle: 'Senior Capstone Design I',
       completed: 'outstanding',
-      gradeReceived: 'B',
+      gradeReceived: '-',
       credit: 3,
     },
     {
       courseNumber: 'CS4980',
       courseTitle: 'Senior Capstone Design II',
       completed: 'outstanding',
-      gradeReceived: 'A',
+      gradeReceived: '-',
       credit: 3,
     },
   ]
 }
+
+
 
 const storage = window.localStorage;
 
@@ -136,8 +138,10 @@ class App extends Component {
 
     return (
       <div className="App">
+
         <Header childProps={childProps}/>
         <Main student={USER} childProps={childProps}/>
+
       </div>
     );
   }
