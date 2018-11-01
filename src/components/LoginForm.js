@@ -12,7 +12,7 @@ export default class LoginForm extends Component {
     };
   }
 
-  {/*verifies the user has entered information in both the username and password fields*/}
+  //verifies the user has entered information in both the username and password fields
   validateForm() {
     return this.state.pawPrint.length > 0 && this.state.password.length > 0;
   }
