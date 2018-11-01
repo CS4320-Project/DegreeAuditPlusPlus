@@ -7,7 +7,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Table from './Table';
-import UserInfo from './UserInfo';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 function TabContainer({ children, dir }) {

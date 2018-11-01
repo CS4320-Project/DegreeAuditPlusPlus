@@ -1,5 +1,4 @@
 import React from 'react';
-import { Label } from 'react-bootstrap';
 import "../styles/UserInfo.css";
 
 export default class UserInfo extends React.Component {
@@ -18,7 +17,7 @@ export default class UserInfo extends React.Component {
       <p>
         <button className="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 
-        STUDENT INFORMATION + 
+        STUDENT INFORMATION +
 
         </button>
       </p>
