@@ -45,7 +45,7 @@ export default class StudentSearch extends React.Component {
 
 
         <div className="StudentSearch">
-        <h1>Search Student</h1>
+        <h1 className="heading">Search Student</h1>
 
 		 <form onSubmit={this.handleSubmit}>
 
@@ -55,6 +55,7 @@ export default class StudentSearch extends React.Component {
             <FormControl
               autoFocus
               type="studentNumber"
+							placeholder="Enter Student Number..."
               value={this.state.studentNumber}
               onChange={this.handleChange}
             />

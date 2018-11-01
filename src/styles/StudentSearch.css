@@ -11,6 +11,15 @@
 
 }
 */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+.heading{
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  color: #fadd45;
+}
 
 .StudentSearch form {
     margin: 0 auto;
@@ -25,4 +34,10 @@ buttom{
   font-size: 17px;
   border: none;
   cursor: pointer;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+    border-color: rgba(250, 221, 69, 0.5);
+    box-shadow: 0 1px 1px rgba(250, 221, 69, 0.5) inset, 0 0 8px rgba(250, 221, 69, 0.5);
+    outline: 0 none;
 }

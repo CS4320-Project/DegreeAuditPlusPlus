@@ -55,7 +55,7 @@ export default class LoginForm extends Component {
       <div className="LoginForm">
         <form onSubmit={this.handleSubmit}>
 
-          <FormGroup controlId="pawPrint" bsSize="large">
+          <FormGroup controlId="pawPrint" bsSize="large" className="textHover">
             <ControlLabel>PawPrint</ControlLabel>
 
             <FormControl
@@ -65,7 +65,7 @@ export default class LoginForm extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
+          <FormGroup controlId="password" bsSize="large" className="textHover">
             <ControlLabel>Password</ControlLabel>
             <FormControl
               value={this.state.password}
