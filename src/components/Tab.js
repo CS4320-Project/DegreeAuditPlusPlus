@@ -33,6 +33,9 @@ const theme = createMuiTheme({
     },
     direction: "rtl",
   },
+  typography: {
+  useNextVariants: true,
+  }
 });
 
 const styles = theme => ({
@@ -41,6 +44,9 @@ const styles = theme => ({
     width: 1200,
     padding: 20,
   },
+  typography: {
+  useNextVariants: true,
+  }
 });
 
 {/*handles moving from tab to tab, and sets the state for the view.*/}
