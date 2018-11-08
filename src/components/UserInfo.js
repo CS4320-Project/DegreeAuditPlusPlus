@@ -16,7 +16,6 @@ export default class UserInfo extends React.Component {
     })
       .then(res => res.json())
       .then(res => {
-        console.log(res);
         if(res.error){
           console.log("error: ", res.error);
         } else {
@@ -36,12 +35,10 @@ export default class UserInfo extends React.Component {
 
     return (
       <div>
-
     {/*Heading for the Home page, and collapse information.*/}
         <button className="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         STUDENT INFORMATION +
         </button>
-      </p>
         <div className="collapse" id="collapseExample">
           <div className="card card-body">
             <div className="container">
