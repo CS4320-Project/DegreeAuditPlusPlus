@@ -14,10 +14,8 @@ export default class Header extends React.Component {
     // Determine which login button to display
     let loginButton;
     if(this.props.childProps.isAuthenticated === 'true'){
-      console.log("Log out");
       loginButton = <Fragment><LinkContainer to="/login"><NavItem onClick={this.handleLogout} componentClass="span" className="hlButton">Log Out</NavItem></LinkContainer></Fragment>;
     } else {
-      console.log("Log in");
       loginButton = <Fragment><LinkContainer to='/login'><NavItem componentClass="span" className="hlButton">Log in</NavItem></LinkContainer></Fragment>;
     }
 

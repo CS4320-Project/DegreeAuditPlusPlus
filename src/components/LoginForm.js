@@ -26,10 +26,20 @@ export default class LoginForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    fetch('/api/users/' + this.state.pawPrint)
+    fetch('/api/login', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        username: this.state.pawPrint,
+        password: this.state.password
+      })
+    })
       .then(res => res.json())
       .then(res => {
-        if(res.error){
+        if(!res){
           alert('Username or password is incorrect');
         } else {
           this.props.childProps.userHasAuthenticated(true, res);
@@ -41,8 +51,6 @@ export default class LoginForm extends Component {
           }
         }
       });
-
-    console.dir(this.props);
   }
 
 

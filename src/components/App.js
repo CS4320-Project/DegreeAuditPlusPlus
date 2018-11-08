@@ -17,7 +17,6 @@ class App extends Component {
 
   componentDidMount(){
     let user = storage.getItem('user');
-    console.dir(JSON.parse(user));
     if(user !== 'undefined'){
       this.setState({user: JSON.parse(user)});
     }
@@ -48,8 +47,7 @@ class App extends Component {
       <div className="App">
 
         <Header childProps={childProps}/>
-        <Main user={this.state.user} childProps={childProps}/>
-
+          <Main user={this.state.user} childProps={childProps}/>
       </div>
     );
   }
