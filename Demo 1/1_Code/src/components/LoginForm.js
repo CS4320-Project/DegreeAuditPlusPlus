@@ -26,32 +26,22 @@ export default class LoginForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    fetch('/api/login', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        username: this.state.pawPrint,
-        password: this.state.password
-      })
-    })
-      .then(res => res.json())
-      .then(res => {
-        if(!res){
-          alert('Username or password is incorrect');
-        } else {
-          this.props.childProps.userHasAuthenticated(true, res);
-          if(res.userType === 'student'){
-            window.location = '/home';
-          }
-          if(res.userType === 'advisor'){
-            window.location = '/studentSearch';
-          }
-        }
-      });
+  {/*used for quick demo demonstration*/}
+    console.dir(this.props);
+    if(this.state.pawPrint === 'sbc436'){
+      this.props.childProps.userHasAuthenticated(true);
+      window.location = '/home';
+    } else if(this.state.pawPrint === 'nbalser') {
+      this.props.childProps.userHasAuthenticated(true);
+      window.location = '/studentSearch';
+    }
+	  else {
+		  alert('Username or password is incorrect!');
+        {/*alerts the user that invalid information has been entered.*/}
+	  }
+
   }
+
 
   render() {
     return (
