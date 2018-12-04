@@ -18,7 +18,7 @@ export default class GPACalculator extends React.Component {
               <form action="" method="post">
 
                   <table id="gpa-calc">
-                  <caption>Enter the course credit hours and the anticipated&nbsp;grade.</caption>
+                  <caption>Enter the course credit hours and the anticipated grade.</caption>
                       <thead>
                           <tr>
                               <th className="border">&nbsp;</th>
@@ -190,39 +190,59 @@ export default class GPACalculator extends React.Component {
                       </tbody>
                   </table>
 
-                      <p>Previous GPA: (e.g. 2.235 or 3)
-                          <input id="prevGPA" name="prevGPA" size="10" type="text"></input>
+                      <p className="previous">Previous GPA: (e.g. 2.235 or 3)
+                          <input id="prevGPA" name="prevGPA" size="10" type="text" className="in"></input>
                       </p>
-                      <p>Previous GPA hours attempted: (e.g. 10.5 or 10)
-                          <input id="prevHours" name="prevHours" size="10" type="text"></input>
+                      <p className="previous">Previous GPA hours attempted: (e.g. 10.5 or 10)
+                          <input id="prevHours" name="prevHours" size="10" type="text" className="in"></input>
                       </p>
-
-                      <p><input className="button" id="sbmtCalcGPA" name="sbmtCalcGPA" onclick="return calcTotals();" type="button" value="Calculate GPA"></input></p>
+      
+                    <button className="button" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                        Calculate GPA +
+                    </button>
+                        <div className="collapse" id="collapseExample3">
+                        <div className="card card-body">
+                        <div className="container">
+                        <div className="row">
+                        <div className="like-blockquote" id="results-container" styles="background-image: none; background-color: rgb(252, 241, 212);">
+                        <h2>Results</h2>
+                            <ul>
+                                <li>Total points:
+                                    <span id="pointTotal" name="pointTotal"></span>
+                                </li>
+                                <li>Total hours:
+                                    <span id="hourTotal" name="hourTotal"></span>
+                                </li>
+                                <li>Semester GPA:
+                                    <span id="semesterGPA" name="semesterGPA"></span>
+                                </li>
+                                <li>Overall GPA:
+                                    <span id="overallGPA" name="overallGPA"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                  
+                          
+                          
+                          
+                          
 
                       <div className="error-message" id="errmsgs-container" styles="display:none;">&nbsp;</div>
                   </form>
-                  <div className="like-blockquote" id="results-container" styles="background-image: none; background-color: rgb(252, 241, 212);">
-                    <h2>Results</h2>
-                    <ul>
-                    <li>Total points:
-                        <span id="pointTotal" name="pointTotal"></span>
-                    </li>
-                    <li>Total hours:
-                        <span id="hourTotal" name="hourTotal"></span>
-                    </li>
-                    <li>Semester GPA:
-                        <span id="semesterGPA" name="semesterGPA"></span>
-                    </li>
-                    <li>Overall GPA:
-                        <span id="overallGPA" name="overallGPA"></span>
-                    </li>
-                    </ul>
-                </div>
+                  
               </div>
             </div>
           </div>
         </div>
       </div>
     );
+      
+
   }
+    
+    
 }

@@ -1,30 +1,52 @@
+/*fadd45*/
+
+/*<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 caption {
     font-weight: 400;
-    color: #111;
+    color: #fadd45;
     margin-bottom: 27px;
     margin-bottom: 1.5rem;
     font-size: 22.5px;
-    font-size: 1.25rem;
+/*    font-size: 1.25rem;*/
     font-weight: 600;
     margin: 0;
     margin-bottom: 9px;
-    margin-bottom: .5rem;
-    text-align: left
+/*    margin-bottom: .5rem;*/
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+.previous{
+    color: #fadd45;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+/*    padding-right: 20px;*/
+}
+
+.in{
+    margin-left:20px;
+    color:black;
 }
 
 table {
-    width: 100%;
+    width: 70%;
     border-collapse: collapse;
     border-spacing: 0;
-    margin: 0;
+/*    margin: 0;*/
     margin-bottom: 27px;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
+    margin-left:150px;
+    margin-top: 20px;
 }
 
 .border {
   border: 1px solid #ccc;
-  text-align: left
+  text-align: left;
+  color:black;
+  font-size: 15px;
 }
+
 
 td,th {
     vertical-align: top;
@@ -37,8 +59,15 @@ td,th {
 }
 
 .stripe td,.stripe th {
-    background-color: #f5f2f0
+    background-color: #dbdbdb;
+    font-size: 15px;
 }
+
+/*
+.title{
+    color:#fadd45;
+}
+*/
 
 th[scope=col] {
     border-bottom-width: 2px
