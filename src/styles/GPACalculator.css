@@ -55,13 +55,8 @@ tfoot td,tfoot th {
 }
 
 .like-blockquote {
-    background-color: #fcf1d4;
-    padding: 21.6px;
-    padding: 1.2rem;
-    margin-right: -21.6px;
-    margin-right: -1.2rem;
-    margin-left: -21.6px;
-    margin-left: -1.2rem;
-    margin-bottom: 36px;
-    margin-bottom: 2rem
+    border: solid 10px #fadd46;
+    margin:auto;
+    width:27%;
+    
 }
