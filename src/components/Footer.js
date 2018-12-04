@@ -1,6 +1,4 @@
-import React, {Fragment} from 'react';
-import { Link } from 'react-router-dom';
-import { LinkContainer } from 'react-router-bootstrap';
+import React from 'react';
 import '../styles/Footer.css';
 
 export default class Header extends React.Component {
