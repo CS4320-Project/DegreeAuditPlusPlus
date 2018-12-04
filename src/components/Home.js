@@ -1,7 +1,7 @@
 import React from "react";
 import UserInfo from './UserInfo';
+import GPACalculator from './GPACalculator';
 import Tab from './Tab';
-import GradeCalculator from './GradeCalculator';
 
 export default class Home extends React.Component{
 
@@ -30,7 +30,7 @@ export default class Home extends React.Component{
         { this.props && this.props.student &&
           <React.Fragment>
             <UserInfo student={this.props.student}/>
-            <GradeCalculator/>
+            <GPACalculator/>
             <Tab student={this.props.student}/>
           </React.Fragment>
         }
