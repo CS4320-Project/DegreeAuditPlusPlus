@@ -96,6 +96,7 @@ class FullWidthTabs extends React.Component {
 
     //the display of the tabs which is used for the css
     return (
+    <div className="container">
     <div className="tabby">
       <MuiThemeProvider theme={theme}>
       <div className={classes.root}>
@@ -126,6 +127,7 @@ class FullWidthTabs extends React.Component {
 
       </div>
       </MuiThemeProvider>
+      </div>
       </div>
     );
   }
