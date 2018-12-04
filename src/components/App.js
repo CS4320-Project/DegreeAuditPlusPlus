@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import Header from './Header.js';
 import Main from './Main.js';
+import Footer from './Footer.js';
+
 {
 /*
   This file holds our current information
@@ -56,6 +58,7 @@ class App extends Component {
 
         <Header childProps={childProps}/>
           <Main user={this.state.user} childProps={childProps}/>
+        <Footer/>
       </div>
     );
   }

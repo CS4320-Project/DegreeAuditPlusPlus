@@ -233,7 +233,23 @@ export default class GPACalculator extends React.Component {
 
                       <div className="error-message" id="errmsgs-container" styles="display:none;">&nbsp;</div>
                   </form>
-                  
+
+                  <div className="like-blockquote" id="results-container" styles="background-image: none; background-color: rgb(252, 241, 212);">
+                    <h2>Results</h2>
+                    Total points:
+                        <span id="pointTotal" name="pointTotal"></span>
+                    <br></br>
+                    Total hours:
+                        <span id="hourTotal" name="hourTotal"></span>
+                    <br></br>
+                    Semester GPA:
+                        <span id="semesterGPA" name="semesterGPA"></span>
+                    <br></br>
+                   Overall GPA:
+                        <span id="overallGPA" name="overallGPA"></span>
+                    <br></br>
+      <br></br>
+                </div>
               </div>
             </div>
           </div>
