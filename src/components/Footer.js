@@ -5,9 +5,9 @@ export default class Header extends React.Component {
 
   render(){
     return(
-      <div id="footerDiv">
+      <footer>
         Copyright &copy; {(new Date().getFullYear())} Sara Caponi, Jamie Flores, Daniel Jaegers, Derek Rogers, Erika Eckfeld, Kate Gardner, Sohaila Bakr
-      </div>
+      </footer>
     );
   }
 }
