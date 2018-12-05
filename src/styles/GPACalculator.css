@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+#results-container > ul {
+  list-style-type: none;
+}
+
+#results-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
 /*fadd45*/
 
 /*<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> */
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 caption {
     font-weight: 400;
     color: #fadd45;
@@ -87,5 +100,5 @@ tfoot td,tfoot th {
     border: solid 10px #fadd46;
     margin:auto;
     width:27%;
-    
+
 }
