@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+footer {
+  padding: 50px;
+  color: grey;
+  font-family: 'Oswald', sans-serif;
+}
