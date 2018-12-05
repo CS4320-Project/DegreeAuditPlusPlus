@@ -3,6 +3,60 @@ import "../styles/GPACalculator.css";
 
 export default class GPACalculator extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      totalPoints: null,
+      totalHours: null,
+      semesterGPA: null,
+      overallGPA: null
+    };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.target);
+
+    let hours  = [];
+    let grades = [];
+    let prevGPA = 0;
+    let prevHours = 0;
+
+    for(let pair of data.entries()){
+      if(pair[0].includes('hours_') && pair[1] !== ''){
+        hours.push(parseFloat(pair[1]));
+      } else if(pair[0].includes('grade_') && pair[1] !== ''){
+        grades.push(parseFloat(pair[1]));
+      } else if(pair[0].includes('prevGPA') && pair[1] !== ''){
+        prevGPA += parseFloat(pair[1]);
+      } else if(pair[0].includes('prevHours') && pair[1] !== ''){
+        prevHours += parseFloat(pair[1]);
+      }
+
+    }
+
+    let currentHours = hours.reduce((a,b) => a + b);
+    let currentPoints = 0;
+    let prevPoints = prevGPA * prevHours;
+    let semesterGPA = currentPoints / currentHours;
+    let overallGPA = (currentPoints + prevPoints)/(prevHours + currentHours);
+
+    for(let i = 0; i < grades.length; i++){
+      currentPoints += (grades[i] * hours[i]);
+    }
+
+    this.setState({
+      totalPoints: currentPoints + prevPoints,
+      totalHours: currentHours + prevHours,
+      semesterGPA: semesterGPA.toFixed(3),
+      overallGPA: overallGPA.toFixed(3)
+    });
+
+  }
+
   render() {
     return (
       <div>
@@ -15,7 +69,7 @@ export default class GPACalculator extends React.Component {
               <div className="row">
 
 
-              <form action="" method="post">
+              <form onSubmit={this.handleSubmit} method="post">
 
                   <table id="gpa-calc">
                   <caption>Enter the course credit hours and the anticipated&nbsp;grade.</caption>
@@ -31,7 +85,7 @@ export default class GPACalculator extends React.Component {
                                   <td className="border"><label htmlFor="hours_1">Class 1:</label></td>
                                   <td className="border"><input id="hours_1" name="hours_1" size="8" type="text"></input></td>
                                   <td className="border"><select id="grade_1" name="grade_1">
-                                      <option selected="selected" value=""> </option>
+                                      <option  value=""> </option>
                                       <option value="4.0">A+</option>
                                       <option value="4.0">A</option>
                                       <option value="3.7">A-</option>
@@ -51,7 +105,7 @@ export default class GPACalculator extends React.Component {
                                   <td className="border"><label htmlFor="hours_2">Class 2:</label></td>
                                   <td className="border"><input id="hours_2" name="hours_2" size="8" type="text"></input></td>
                                   <td className="border"><select id="grade_2" name="grade_2">
-                                      <option selected="selected" value=""> </option>
+                                      <option  value=""> </option>
                                       <option value="4.0">A+</option>
                                       <option value="4.0">A</option>
                                       <option value="3.7">A-</option>
@@ -71,7 +125,7 @@ export default class GPACalculator extends React.Component {
                                   <td className="border"><label htmlFor="hours_3">Class 3:</label></td>
                                   <td className="border"><input id="hours_3" name="hours_3" size="8" type="text"></input></td>
                                   <td className="border"><select id="grade_3" name="grade_3">
-                                      <option selected="selected" value=""> </option>
+                                      <option  value=""> </option>
                                       <option value="4.0">A+</option>
                                       <option value="4.0">A</option>
                                       <option value="3.7">A-</option>
@@ -91,7 +145,7 @@ export default class GPACalculator extends React.Component {
                                   <td className="border"><label htmlFor="hours_4">Class 4:</label></td>
                                   <td className="border"><input id="hours_4" name="hours_4" size="8" type="text"></input></td>
                                   <td className="border"><select id="grade_4" name="grade_4">
-                                      <option selected="selected" value=""> </option>
+                                      <option  value=""> </option>
                                       <option value="4.0">A+</option>
                                       <option value="4.0">A</option>
                                       <option value="3.7">A-</option>
@@ -111,7 +165,7 @@ export default class GPACalculator extends React.Component {
                                   <td className="border"><label htmlFor="hours_5">Class 5:</label></td>
                                   <td className="border"><input id="hours_5" name="hours_5" size="8" type="text"></input></td>
                                   <td className="border"><select id="grade_5" name="grade_5">
-                                      <option selected="selected" value=""> </option>
+                                      <option  value=""> </option>
                                       <option value="4.0">A+</option>
                                       <option value="4.0">A</option>
                                       <option value="3.7">A-</option>
@@ -131,7 +185,7 @@ export default class GPACalculator extends React.Component {
                                   <td className="border"><label htmlFor="hours_6">Class 6:</label></td>
                                   <td className="border"><input id="hours_6" name="hours_6" size="8" type="text"></input></td>
                                   <td className="border"><select id="grade_6" name="grade_6">
-                                      <option selected="selected" value=""> </option>
+                                      <option  value=""> </option>
                                       <option value="4.0">A+</option>
                                       <option value="4.0">A</option>
                                       <option value="3.7">A-</option>
@@ -151,7 +205,7 @@ export default class GPACalculator extends React.Component {
                                   <td className="border"><label htmlFor="hours_7">Class 7:</label></td>
                                   <td className="border"><input id="hours_7" name="hours_7" size="8" type="text"></input></td>
                                   <td className="border"><select id="grade_7" name="grade_7">
-                                      <option selected="selected" value=""> </option>
+                                      <option  value=""> </option>
                                       <option value="4.0">A+</option>
                                       <option value="4.0">A</option>
                                       <option value="3.7">A-</option>
@@ -171,7 +225,7 @@ export default class GPACalculator extends React.Component {
                                   <td className="border"><label htmlFor="hours_8">Class 8:</label></td>
                                   <td className="border"><input id="hours_8" name="hours_8" size="8" type="text"></input></td>
                                   <td className="border"><select id="grade_8" name="grade_8">
-                                      <option selected="selected" value=""> </option>
+                                      <option  value=""> </option>
                                       <option value="4.0">A+</option>
                                       <option value="4.0">A</option>
                                       <option value="3.7">A-</option>
@@ -197,27 +251,20 @@ export default class GPACalculator extends React.Component {
                           <input id="prevHours" name="prevHours" size="10" type="text"></input>
                       </p>
 
-                      <p><input className="button" id="sbmtCalcGPA" name="sbmtCalcGPA" onclick="return calcTotals();" type="button" value="Calculate GPA"></input></p>
-
+                      <button>Calculate GPA</button>
                       <div className="error-message" id="errmsgs-container" styles="display:none;">&nbsp;</div>
                   </form>
-                  <div className="like-blockquote" id="results-container" styles="background-image: none; background-color: rgb(252, 241, 212);">
+                  {this.state.overallGPA !== null ?
+                  (<div className="like-blockquote" id="results-container" styles="background-image: none; background-color: rgb(252, 241, 212);">
                     <h2>Results</h2>
                     <ul>
-                    <li>Total points:
-                        <span id="pointTotal" name="pointTotal"></span>
-                    </li>
-                    <li>Total hours:
-                        <span id="hourTotal" name="hourTotal"></span>
-                    </li>
-                    <li>Semester GPA:
-                        <span id="semesterGPA" name="semesterGPA"></span>
-                    </li>
-                    <li>Overall GPA:
-                        <span id="overallGPA" name="overallGPA"></span>
-                    </li>
+                      <li>Total points: {this.state.totalPoints}</li>
+                      <li>Total hours: {this.state.totalHours}</li>
+                      <li>Semester GPA: {this.state.semesterGPA}</li>
+                      <li>Overall GPA: {this.state.overallGPA}</li>
                     </ul>
-                </div>
+                  </div>) : null
+                }
               </div>
             </div>
           </div>
