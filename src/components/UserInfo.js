@@ -23,6 +23,9 @@ export default class UserInfo extends React.Component {
         }
       });
   }
+	 semesterLeft(){
+		document.getElementById("semester").innerHTML= "Change Text"
+	}
 
   render() {
     let gradDate = '';
@@ -68,6 +71,10 @@ export default class UserInfo extends React.Component {
                     <React.Fragment>
                       <h2 className="format"><b>Advisor Email</b></h2>
                       <h4>{this.state.advisor.pawPrint}@missouri.edu</h4>
+		
+				<h2 className="format"><b> Semesters Left</b> </h2>
+				<h4> {this.props.semesterLeft}</h4>
+		
                     </React.Fragment>
                   }
                 </div>

@@ -1,0 +1,11 @@
+.legend { list-style: none; }
+.legend li { float: left; margin-right: 10px; }
+.legend span {
+	border: 1px solid #ccc;
+	float: left; 
+	width: 20px; 
+	height: 20px;
+	margin: 2px; }
+.legend .completed { background-color: #fadd49; }
+.legend .current { background-color: #4c4c4c; }
+.legend .remaining { background-color: #a6a6a6; }
