@@ -250,23 +250,23 @@ export default class GPACalculator extends React.Component {
                       <input id="prevHours" name="prevHours" size="10" type="text" className="in"></input>
                   </p>
                     <button className="button" onSubmit={this.handleSubmit} type="submit" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                        Calculate GPA +
+                        CALCULATE GPA +
                     </button>
                     {this.state.overallGPA !== null ?
-                      (<div className="card card-body">
+                      (
+                      
+                      <div className="card card-body">
                         <div className="container">
                         <div className="row">
-                        <div className="like-blockquote" id="results-container" styles="background-image: none; background-color: rgb(252, 241, 212);">
-                        <h2>Results</h2>
-                        <ul>
-                          <li>Total points: {totalPoints}</li>
-                          <li>Total hours: {totalHours}</li>
-                          <li>Semester GPA: {semesterGPA}</li>
-                          <li>Overall GPA: {overallGPA}</li>
-                        </ul>
+                       
+                        <h2 className="button">RESULTS</h2>
+                          <h2 className="results col-sm-4">Total hours: {totalHours}</h2>
+                          <h3 className="results col-sm-4">Semester GPA: {semesterGPA}</h3>
+                          <h4 className="results col-sm-4">Overall GPA: {overallGPA}</h4>
+                        
                         </div>
                         </div>
-                        </div>
+                      
                         </div>) : null}
                 </form>
               </div>

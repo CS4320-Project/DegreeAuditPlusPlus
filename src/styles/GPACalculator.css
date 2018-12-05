@@ -89,10 +89,18 @@ tfoot td,tfoot th {
     font-size: .875rem;
     border: 0
 }
+.results{
+    color: #a6a6a6;
+    font-size: 15pt;
+    font-family: 'Oswald', sans-serif;
+ 
+  }
 
+/*
 .like-blockquote {
     border: solid 10px #fadd46;
     margin:auto;
     width:27%;
 
 }
+*/
