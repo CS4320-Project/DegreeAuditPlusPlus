@@ -6,6 +6,6 @@
 	width: 20px; 
 	height: 20px;
 	margin: 2px; }
-.legend .completed { background-color: #fadd49; }
+.legend .completed { background-color: #fadd45; }
 .legend .current { background-color: #4c4c4c; }
 .legend .remaining { background-color: #a6a6a6; }

@@ -6,7 +6,7 @@ import "../styles/Chart.css";
 export default class Chart extends React.Component {  
 	
    data1: any[]= [
-    { x: 'Completed Hours', y: this.props.hoursTaken, text: 'Completed', fill: '#fadd49' },
+    { x: 'Completed Hours', y: this.props.hoursTaken, text: 'Completed', fill: '#fadd45' },
     { x: 'Current Hours', y: this.props.currentHours, text: 'Current', fill: '#4c4c4c' },
     { x: 'Remaining Hours', y: this.props.hoursRemaining, text: 'Outstanding', fill: '#a6a6a6' },
   
