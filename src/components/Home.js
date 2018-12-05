@@ -56,7 +56,7 @@ export default class Home extends React.Component{
 		</div>
 		<div className="InfoDiv">
             <UserInfo student={this.props.student} />
-            <GPACalculator/>
+            <GPACalculator student={this.props.student}/>
 		</div>
 
 
