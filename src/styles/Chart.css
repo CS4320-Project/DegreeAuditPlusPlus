@@ -1,11 +1,76 @@
-.legend { list-style: none; }
-.legend li { float: left; margin-right: 10px; }
-.legend span {
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.legend  {
+    
+    list-style: none;
+}
+.legend .li{
+
+
+}
+.legend .completed {
+	background-color: #fadd45; 
 	border: 1px solid #ccc;
-	float: left; 
 	width: 20px; 
 	height: 20px;
-	margin: 2px; }
-.legend .completed { background-color: #fadd45; }
-.legend .current { background-color: #4c4c4c; }
-.legend .remaining { background-color: #a6a6a6; }
+	float: left;
+	clear: left;
+	margin: 2px;
+
+}
+.legend .current { 
+	background-color: #4c4c4c; 
+	border: 1px solid #ccc;
+	width: 20px; 
+	height: 20px;
+	float: left;
+	clear: left;
+	margin: 2px;
+}
+.legend .remaining {
+	background-color: #a6a6a6; 
+	border: 1px solid #ccc;
+	width: 20px; 
+	height: 20px;
+	float: left;
+	clear: left;
+	margin: 2px;
+}
+.legend .thing{
+	float: left;
+	margin: 2px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 11pt;
+}
+
+.legendDiv {
+/*	width: 35%;*/
+	float: left;
+	clear: left;
+	padding-bottom: 30px;
+	margin: 20px;
+	display: block;
+	width: 250px;
+}
+.chartDiv{
+	float: left;
+
+}
+.wrapperDiv{
+	display: block;
+	margin: auto;
+  	width: 500px;
+
+}
+h5{
+	float: left;
+	clear: left;
+	margin-top: 20px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12pt;
+	text-align: left;
+}
+.DegreeProgress{
+	text-align: left;
+	margin-bottom: 20px;
+}

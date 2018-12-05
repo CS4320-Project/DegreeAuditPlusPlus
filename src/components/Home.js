@@ -50,9 +50,14 @@ export default class Home extends React.Component{
       <div>
         { this.props && this.props.student &&
           <React.Fragment>
-            <UserInfo student={this.props.student} semesterLeft={semesterLeft}/>
+		<div className="DonutDiv">
+		 <Chart hoursTaken={hoursTaken} currentHours={currentHours} hoursRemaining={hoursRemaining} semesterLeft={semesterLeft}/>
+		</div>
+            <UserInfo student={this.props.student} />
             <GPACalculator/>
-			<Chart hoursTaken={hoursTaken} currentHours={currentHours} hoursRemaining={hoursRemaining}/>
+		
+		
+		
             <Tab student={this.props.student}/>
 
           </React.Fragment>

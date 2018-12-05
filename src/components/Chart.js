@@ -19,26 +19,28 @@ export default class Chart extends React.Component {
 	
 	  
     return (
-	<div>
-
-	<h2> Current Degree Progress </h2>
-<ul className="legend">
-    <li><span className="completed"></span> Completed Hours</li>
-    <li><span className="current"></span> Currently Enrolled Hours</li>
-    <li><span className="remaining"></span> Remaining Hours</li>
-</ul>
+	<div className="wrapperDiv">
 		
+	<div className="legendDiv">
+		<h3 className="DegreeProgress"> Current Degree Progress </h3>
+			<ul className="legend">
+				<li><span className="completed"></span> <span className="thing">Completed Hours</span></li>
+				<li><span className="current"></span> <span className="thing">Currently Enrolled Hours</span></li>
+				<li><span className="remaining"></span><span className="thing"> Remaining Hours</span></li>
+			</ul>
+			<h5> *Based on your degree progress you have {this.props.semesterLeft} semesters remaining</h5>
+	</div>	
 		
+	<div className="chartDiv">	
+		<AccumulationChartComponent id='charts' height='200' width='200'>
+    	<Inject services={[PieSeries]} />
+    	<AccumulationSeriesCollectionDirective >
+		<AccumulationSeriesDirective dataSource={this.data1} xName='x' yName='y' type='Pie' innerRadius='40%' pointColorMapping= 'fill' />
+		</AccumulationSeriesCollectionDirective>
+		</AccumulationChartComponent>
+	</div>	
+	</div>
 		
-	<AccumulationChartComponent id='charts' height='200' >
-
-    <Inject services={[PieSeries]} />
-    <AccumulationSeriesCollectionDirective >
-      <AccumulationSeriesDirective dataSource={this.data1} xName='x' yName='y' type='Pie' innerRadius='40%' pointColorMapping= 'fill' />
-    </AccumulationSeriesCollectionDirective>
-	
-  </AccumulationChartComponent>
-		</div>
     );
   }
 }
