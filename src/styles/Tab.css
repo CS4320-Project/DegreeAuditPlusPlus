@@ -1,4 +1,29 @@
 .tabby{
-  margin: auto;
-  width: 95%;
+  margin-left: auto;
+}
+
+.MuiPrivateTabIndicator-root-63{
+  background-color: #fadd45 !important;
+}
+.MuiPrivateTabIndicator-colorPrimary-64{
+  background-color: #fadd45 !important;
+}
+.MuiTabs-indicator-47{
+  background-color: #fadd45 !important;
+}
+.MuiButtonBase-root-60{
+  color: #a6a6a6 !important;
+  font-size: 10pt !important;
+}
+.MuiTab-root-48{
+  color: #a6a6a6 !important;
+  font-size: 10pt !important;
+}
+.MuiTab-textColorPrimary-51{
+  color: #a6a6a6 !important;
+  font-size: 10pt !important;
+}
+.MuiTab-fullWidth-55{
+  color: #a6a6a6 !important;
+  font-size: 10pt !important;
 }

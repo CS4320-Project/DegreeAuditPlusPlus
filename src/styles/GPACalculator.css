@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+#results-container > ul {
+  list-style-type: none;
+}
+
+#results-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+/*fadd45*/
+
+/*<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> */
+
+caption {
+    font-weight: 400;
+    color: #fadd45;
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+    font-size: 22.5px;
+/*    font-size: 1.25rem;*/
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 9px;
+/*    margin-bottom: .5rem;*/
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+.previous{
+    color: #fadd45;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+/*    padding-right: 20px;*/
+}
+
+.in{
+    margin-left:20px;
+    color:black;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    border-spacing: 0;
+/*    margin: 0;*/
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+    margin-left:150px;
+    margin-top: 20px;
+}
+
+.border {
+  border: 1px solid #ccc;
+  text-align: left;
+  color:black;
+  font-size: 15px;
+}
+
+
+td,th {
+    vertical-align: top;
+    padding: 4.5px;
+    padding: .25rem;
+    padding-left: 9px;
+    padding-left: .5rem;
+    padding-right: 9px;
+    padding-right: .5rem
+}
+
+.stripe td,.stripe th {
+    background-color: #dbdbdb;
+    font-size: 15px;
+}
+
+/*
+.title{
+    color:#fadd45;
+}
+*/
+
+th[scope=col] {
+    border-bottom-width: 2px
+}
+
+th[scope=row] {
+    border-right-width: 2px
+}
+
+tfoot td,tfoot th {
+    font-size: 15.75px;
+    font-size: .875rem;
+    border: 0
+}
+
+.like-blockquote {
+    border: solid 10px #fadd46;
+    margin:auto;
+    width:27%;
+
+}

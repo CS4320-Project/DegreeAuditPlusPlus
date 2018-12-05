@@ -1,10 +1,10 @@
 import React from 'react';
-import LoginForm from '../components/LoginForm';
+import Main from '../components/Main';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
     const tree = renderer
-      .create(<LoginForm></LoginForm>)
+      .create(<Main></Main>)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

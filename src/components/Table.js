@@ -19,6 +19,7 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 import { lighten } from '@material-ui/core/styles/colorManipulator';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import "../styles/Tab.css";
+import "../styles/Table.css";
 
 let counter = 0;
 function createData(courses, title, grade, credit) {
@@ -308,7 +309,7 @@ class EnhancedTable extends React.Component {
       <Paper className={classes.root}>
         <EnhancedTableToolbar numSelected={selected.length} />
         <div className={classes.tableWrapper}>
-          <Table className={classes.table} aria-labelledby="tableTitle">
+          <Table className={classes.table} className="help" aria-labelledby="tableTitle">
             <EnhancedTableHead
               numSelected={selected.length}
               order={order}

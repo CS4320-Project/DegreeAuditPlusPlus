@@ -2,7 +2,6 @@ import React from "react";
 import '../styles/StudentSearch.css';
 import { Button, FormGroup, FormControl } from "react-bootstrap";
 
-
 export default class StudentSearch extends React.Component {
 
   //gives user a text field to be able to input a student number
@@ -10,32 +9,38 @@ export default class StudentSearch extends React.Component {
     super(props);
 
     this.state = {
-      studentNumber: ""
+      pawPrint: ""
     };
-
   }
 
-	  handleChange = event => {
+  handleChange = event => {
     this.setState({
       [event.target.id]: event.target.value
     });
   }
 
-  //used for quick demo demonstration
-	  handleSubmit = event => {
-    event.preventDefault();
-
-	  if (this.state.studentNumber === "14261685" ){
-
-			window.location = '/home';
-
-	  }
-
-	  else{
-		   alert('The entered student number does not exist ' + this.state.studentNumber );
-			   //alerts the user that the information entered is not valid, used for quick demonstration
-	  }
-
+  handleSubmit = event => {
+	  event.preventDefault();
+		let studentPawPrint = this.state.pawPrint;
+		fetch('/api/students', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        pawprint: studentPawPrint,
+      })
+    })
+    .then(res => res.json())
+    .then(res => {
+      if(!res){
+        alert("Couldn't find student with pawprint '" + this.state.pawPrint + "'");
+      } else {
+        this.props.childProps.userHasAuthenticated(true, res);
+        window.location = '/home';
+      }
+    });
   }
 
   render(){
@@ -47,13 +52,13 @@ export default class StudentSearch extends React.Component {
 
 		 <form onSubmit={this.handleSubmit}>
 
-          <FormGroup controlId="studentNumber" bsSize="large">
+          <FormGroup controlId="pawPrint" bsSize="large">
 
             <FormControl
               autoFocus
-              type="studentNumber"
-							placeholder="Enter Student Number..."
-              value={this.state.studentNumber}
+              type="pawPrint"
+							placeholder="Enter Student PawPrint..."
+              value={this.state.pawPrint}
               onChange={this.handleChange}
             />
                  </FormGroup>
