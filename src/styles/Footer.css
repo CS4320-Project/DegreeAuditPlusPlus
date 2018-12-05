@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-#footerDiv {
-  padding: 15px;
+footer {
+  padding: 50px;
+  color: grey;
   font-family: 'Oswald', sans-serif;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
 }
