@@ -11,9 +11,7 @@
   width: 700px;
 }
 
-/*fadd45*/
 
-/*<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> */
 
 caption {
     font-weight: 400;
@@ -21,11 +19,11 @@ caption {
     margin-bottom: 27px;
     margin-bottom: 1.5rem;
     font-size: 22.5px;
-/*    font-size: 1.25rem;*/
+
     font-weight: 600;
     margin: 0;
     margin-bottom: 9px;
-/*    margin-bottom: .5rem;*/
+
     text-align: left;
     font-family: 'Oswald', sans-serif;
 }
@@ -34,7 +32,7 @@ caption {
     color: #fadd45;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
-/*    padding-right: 20px;*/
+
 }
 
 .in{
@@ -42,11 +40,11 @@ caption {
     color:black;
 }
 
-table {
+#gpa-calc {
     width: 70%;
     border-collapse: collapse;
     border-spacing: 0;
-/*    margin: 0;*/
+    margin: 0;
     margin-bottom: 27px;
     margin-bottom: 1.5rem;
     margin-left:150px;
@@ -76,11 +74,7 @@ td,th {
     font-size: 15px;
 }
 
-/*
-.title{
-    color:#fadd45;
-}
-*/
+
 
 th[scope=col] {
     border-bottom-width: 2px

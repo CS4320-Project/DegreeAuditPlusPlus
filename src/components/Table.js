@@ -196,20 +196,6 @@ EnhancedTableToolbar.propTypes = {
 
 EnhancedTableToolbar = withStyles(toolbarStyles)(EnhancedTableToolbar);
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#fadd45',
-    },
-    secondary: {
-      main: '#fadd45',
-    },
-    direction: "rtl",
-  },
-  typography: {
-    useNextVariants: true,
-  }
-});
 const styles = theme => ({
   root: {
     width: '100%',

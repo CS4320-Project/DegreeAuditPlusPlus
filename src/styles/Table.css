@@ -1,83 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 //current class
 .MuiTableCell-root-387 {
   color: #fadd45 !important;
+  font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableCell-head-388 {
   color: #fadd45 !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableSortLabel-root-405{
   color: #fadd45 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableRow-root-203{
   color: #fadd45 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableRow-root-382 {
   color: #fadd45 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableRow-head-385{
   color: #fadd45 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //title - DegreeAudit++ & icon in current classes
 .MuiTypography-root-320{
   color: #a6a6a6 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-h6-337{
   color: #a6a6a6 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiIconButton-root-362{
   color: #a6a6a6 !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //Information itself in current classes
 .MuiTableCell-root-387{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableCell-body-389{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableCell-paddingNone-394{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //bottom bar
 .MuiTypography-root-320{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-caption-330{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-colorInherit-349{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTablePagination-caption-414{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiSelect-select-422{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTablePagination-select-416{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiSelect-selectMenu-425{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiInputBase-input-438{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 
 
@@ -86,69 +108,85 @@
 .MuiTableRow-head-206{
   color: #fadd45 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 
 .MuiTableSortLabel-root-226{
   color: #fadd45 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //title - DegreeAudit++ & icon in past classes
 .MuiTypography-root-141{
   color: #a6a6a6 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-h6-158{
   color: #a6a6a6 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiIconButton-root-183{
   color: #a6a6a6 !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //Information itself in past classes
 .MuiTableCell-root-208{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableCell-body-210{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableCell-paddingNone-215{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //bottom bar
 .MuiTypography-root-141{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-caption-151{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-colorInherit-170{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTablePagination-caption-235{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiSelect-select-243{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTablePagination-select-237{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiSelect-selectMenu-246{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiInputBase-input-259{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 
 
@@ -157,57 +195,71 @@
 //outstanding classes
 .MuiTableCell-root-552{
   color: #fadd45 !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableCell-head-553{
   color: #fadd45 !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableCell-head-553{
   color: #fadd45 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //title - DegreeAudit++ & icon in outstanding classes
 .MuiTypography-root-485{
   color: #a6a6a6 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-h6-502{
   color: #a6a6a6 !important;
   font-size: 15pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiIconButton-root-527{
   color: #a6a6a6 !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //Information itself in outstanding classes
 .MuiTableCell-root-552{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTableCell-body-554{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 //bottom bar
 .MuiTypography-root-485{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-caption-495{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTypography-colorInherit-514{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTablePagination-caption-579{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiSelect-root-586{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 .MuiTablePagination-selectRoot-580{
   color: #a6a6a6 !important;
   font-size: 10pt !important;
+	font-family: 'Oswald', sans-serif !important;
 }
