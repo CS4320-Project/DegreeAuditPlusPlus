@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .legend  {
-    
+
     list-style: none;
 }
 .legend .li{
@@ -9,28 +9,28 @@
 
 }
 .legend .completed {
-	background-color: #fadd45; 
+	background-color: #fadd45;
 	border: 1px solid #ccc;
-	width: 20px; 
+	width: 20px;
 	height: 20px;
 	float: left;
 	clear: left;
 	margin: 2px;
 
 }
-.legend .current { 
-	background-color: #4c4c4c; 
+.legend .current {
+	background-color: #4c4c4c;
 	border: 1px solid #ccc;
-	width: 20px; 
+	width: 20px;
 	height: 20px;
 	float: left;
 	clear: left;
 	margin: 2px;
 }
 .legend .remaining {
-	background-color: #a6a6a6; 
+	background-color: #a6a6a6;
 	border: 1px solid #ccc;
-	width: 20px; 
+	width: 20px;
 	height: 20px;
 	float: left;
 	clear: left;
@@ -64,25 +64,30 @@
 	border-bottom: solid 2px grey;
 	margin: 20px;
 	margin-left: 0px;
-	padding-bottom: 30px;
-	padding-top: 10px;
-
+	padding-bottom: 22px;
+	padding-top: 35px;
 }
 .wrapperDiv{
-
 	margin: auto;
-  	width: 520px;
-	
+  width: 520px;
 }
 h5{
 	float: left;
 	clear: left;
 	margin-top: 20px;
 	font-family: 'Oswald', sans-serif;
-	font-size: 12pt;
+	font-size: 15pt;
 	text-align: left;
+  color: #a6a6a6;
 }
 .DegreeProgress{
 	text-align: left;
 	margin-bottom: 20px;
+}
+
+.semsleft{
+
+  padding-left: 30px;
+  color: #fadd45;
+  font-size: 15pt;
 }
