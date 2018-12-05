@@ -49,18 +49,30 @@
 	clear: left;
 	padding-bottom: 30px;
 	margin: 20px;
+	margin-right: 0px;
 	display: block;
-	width: 250px;
+	width: 255px;
+	border-left: solid 2px grey;
+	border-top: solid 2px grey;
+	border-bottom: solid 2px grey;
+	padding-left: 15px;
 }
 .chartDiv{
 	float: left;
+	border-right: solid 2px grey;
+	border-top: solid 2px grey;
+	border-bottom: solid 2px grey;
+	margin: 20px;
+	margin-left: 0px;
+	padding-bottom: 30px;
+	padding-top: 10px;
 
 }
 .wrapperDiv{
-	display: block;
+/*	border: solid 2px grey;*/
 	margin: auto;
-  	width: 500px;
-
+  	width: 520px;
+	
 }
 h5{
 	float: left;

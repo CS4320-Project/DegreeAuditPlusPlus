@@ -53,9 +53,10 @@ export default class Home extends React.Component{
 		<div className="DonutDiv">
 		 <Chart hoursTaken={hoursTaken} currentHours={currentHours} hoursRemaining={hoursRemaining} semesterLeft={semesterLeft}/>
 		</div>
+		<div className="InfoDiv">
             <UserInfo student={this.props.student} />
             <GPACalculator/>
-		
+		</div>
 		
 		
             <Tab student={this.props.student}/>

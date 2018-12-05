@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/UserInfo.css";
-
+import "../styles/Home.css";
 export default class UserInfo extends React.Component {
 
   componentDidMount(){

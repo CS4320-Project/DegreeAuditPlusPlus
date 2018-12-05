@@ -19,6 +19,7 @@ export default class Chart extends React.Component {
 	
 	  
     return (
+	
 	<div className="wrapperDiv">
 		
 	<div className="legendDiv">
@@ -32,7 +33,7 @@ export default class Chart extends React.Component {
 	</div>	
 		
 	<div className="chartDiv">	
-		<AccumulationChartComponent id='charts' height='200' width='200'>
+		<AccumulationChartComponent id='charts' height='190' width='200'>
     	<Inject services={[PieSeries]} />
     	<AccumulationSeriesCollectionDirective >
 		<AccumulationSeriesDirective dataSource={this.data1} xName='x' yName='y' type='Pie' innerRadius='40%' pointColorMapping= 'fill' />
@@ -40,6 +41,7 @@ export default class Chart extends React.Component {
 		</AccumulationChartComponent>
 	</div>	
 	</div>
+
 		
     );
   }
