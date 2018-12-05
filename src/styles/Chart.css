@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.legend  {
+    
+    list-style: none;
+}
+.legend .li{
+
+
+}
+.legend .completed {
+	background-color: #fadd45; 
+	border: 1px solid #ccc;
+	width: 20px; 
+	height: 20px;
+	float: left;
+	clear: left;
+	margin: 2px;
+
+}
+.legend .current { 
+	background-color: #4c4c4c; 
+	border: 1px solid #ccc;
+	width: 20px; 
+	height: 20px;
+	float: left;
+	clear: left;
+	margin: 2px;
+}
+.legend .remaining {
+	background-color: #a6a6a6; 
+	border: 1px solid #ccc;
+	width: 20px; 
+	height: 20px;
+	float: left;
+	clear: left;
+	margin: 2px;
+}
+.legend .thing{
+	float: left;
+	margin: 2px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 11pt;
+}
+
+.legendDiv {
+/*	width: 35%;*/
+	float: left;
+	clear: left;
+	padding-bottom: 30px;
+	margin: 20px;
+	margin-right: 0px;
+	display: block;
+	width: 255px;
+	border-left: solid 2px grey;
+	border-top: solid 2px grey;
+	border-bottom: solid 2px grey;
+	padding-left: 15px;
+}
+.chartDiv{
+	float: left;
+	border-right: solid 2px grey;
+	border-top: solid 2px grey;
+	border-bottom: solid 2px grey;
+	margin: 20px;
+	margin-left: 0px;
+	padding-bottom: 30px;
+	padding-top: 10px;
+
+}
+.wrapperDiv{
+/*	border: solid 2px grey;*/
+	margin: auto;
+  	width: 520px;
+	
+}
+h5{
+	float: left;
+	clear: left;
+	margin-top: 20px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12pt;
+	text-align: left;
+}
+.DegreeProgress{
+	text-align: left;
+	margin-bottom: 20px;
+}

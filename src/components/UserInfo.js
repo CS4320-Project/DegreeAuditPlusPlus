@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/UserInfo.css";
-
+import "../styles/Home.css";
 export default class UserInfo extends React.Component {
 
   componentDidMount(){
@@ -23,6 +23,9 @@ export default class UserInfo extends React.Component {
         }
       });
   }
+	 semesterLeft(){
+		document.getElementById("semester").innerHTML= "Change Text"
+	}
 
   render() {
     let gradDate = '';
@@ -68,6 +71,9 @@ export default class UserInfo extends React.Component {
                     <React.Fragment>
                       <h2 className="format"><b>Advisor Email</b></h2>
                       <h4>{this.state.advisor.pawPrint}@missouri.edu</h4>
+		
+		
+		
                     </React.Fragment>
                   }
                 </div>
