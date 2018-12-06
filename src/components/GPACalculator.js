@@ -64,7 +64,7 @@ export default class GPACalculator extends React.Component {
     this.props.student.courses.forEach(course => {
       if (course.completed === 'current'){
         hoursList.push(course.credit);
-      } 
+      }
     });
 
     return (
@@ -258,7 +258,7 @@ export default class GPACalculator extends React.Component {
                       <input id="prevGPA" name="prevGPA" size="10" type="text" className="in" defaultValue={this.props.student.GPA}></input>
                   </p>
                   <p className="previous">Previous GPA hours attempted: (e.g. 10.5 or 10)
-                      <input id="prevHours" name="prevHours" size="10" type="text" className="in" devaultValue={this.props.student.hoursTaken}></input>
+                      <input id="prevHours" name="prevHours" size="10" type="text" className="in" defaultValue={this.props.student.hoursTaken}></input>
                   </p>
 
 
