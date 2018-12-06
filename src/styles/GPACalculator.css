@@ -11,8 +11,6 @@
   width: 700px;
 }
 
-
-
 caption {
     font-weight: 400;
     color: #fadd45;
@@ -93,8 +91,39 @@ tfoot td,tfoot th {
     color: #a6a6a6;
     font-size: 15pt;
     font-family: 'Oswald', sans-serif;
- 
+
   }
+
+  .thisismebutt {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+  }
+
+.thisismebutt222 {
+  background-color: white;
+  color: #a6a6a6;
+  border: 2px solid #a6a6a6;
+}
+
+.thisismebutt222:hover {
+  background-color: #fadd45;
+  border: 2px solid #fadd45;
+}
+
+.instructions{
+  text-align: center;
+}
 
 /*
 .like-blockquote {

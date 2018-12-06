@@ -71,9 +71,9 @@ export default class UserInfo extends React.Component {
                     <React.Fragment>
                       <h2 className="format"><b>Advisor Email</b></h2>
                       <h4>{this.state.advisor.pawPrint}@missouri.edu</h4>
-		
-		
-		
+
+
+
                     </React.Fragment>
                   }
                 </div>
