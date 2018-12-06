@@ -1,3 +1,7 @@
+//written by: Derek, Erika, Jamie
+//tested by: Sara, Sohaila
+//debugged by: Kate, Daniel 
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');

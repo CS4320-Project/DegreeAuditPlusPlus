@@ -1,3 +1,7 @@
+//written by: Derek, Sohalia, Daniel
+//tested by: Kate, Erika
+//debugged by: Jamie, Sara
+
 import React from 'react';
 import '../styles/Footer.css';
 

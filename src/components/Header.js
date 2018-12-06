@@ -1,3 +1,7 @@
+//written by: Sara, Kate, Daniel 
+//tested by: Derek, Jamie
+//debugged by: Erika, Sohaila
+
 import React, {Fragment} from 'react';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
