@@ -33,7 +33,7 @@ export default class Header extends React.Component {
 
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem componentClass="span" className="hlButton"><Link to='home'>Home</Link></NavItem>
+              <NavItem componentClass="span" className="hlButton"></NavItem>
               {loginButton}
             </Nav>
           </Navbar.Collapse>

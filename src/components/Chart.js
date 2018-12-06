@@ -23,7 +23,7 @@ export default class Chart extends React.Component {
 	<div className="wrapperDiv">
 
 	<div className="legendDiv">
-		<h3 className="DegreeProgress">CURRENT DEGREE PROGRESS</h3>
+		<h3 className="DegreeProgress">{this.props.studentName.toUpperCase()}'S CURRENT DEGREE PROGRESS</h3>
 			<ul className="legend">
 				<li><span className="completed"></span> <span className="thing">Completed Hours</span></li>
 				<li><span className="current"></span> <span className="thing">Currently Enrolled Hours</span></li>

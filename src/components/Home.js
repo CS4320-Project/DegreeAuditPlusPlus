@@ -30,6 +30,7 @@ export default class Home extends React.Component{
 	 var currentHours=0;
 	 var hoursReq = 126;
 	 var hoursRemaining;
+	  var studentName=this.props.student.firstName
 	console.dir(this.props.student.courses);
 
 	this.props.student.courses.forEach((course) => {
@@ -51,11 +52,11 @@ export default class Home extends React.Component{
         { this.props && this.props.student &&
           <React.Fragment>
     <div className="DonutDiv">
-		 <Chart hoursTaken={hoursTaken} currentHours={currentHours} hoursRemaining={hoursRemaining} semesterLeft={semesterLeft}/>
+		 <Chart hoursTaken={hoursTaken} currentHours={currentHours} hoursRemaining={hoursRemaining} semesterLeft={semesterLeft} studentName={studentName} />
 		</div>
 		<div className="InfoDiv">
             <UserInfo student={this.props.student} />
-            <GPACalculator/>
+            <GPACalculator student={this.props.student}/>
 		</div>
 
 
