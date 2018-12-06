@@ -1,3 +1,7 @@
+//written by: Derek, Sohalia, Daniel
+//tested by: Kate, Erika
+//debugged by: Jamie, Sara
+
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "../styles/LoginForm.css";

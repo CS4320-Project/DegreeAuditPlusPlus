@@ -1,3 +1,6 @@
+//written by: Derek, Erika, Jamie
+//tested by: Sara, Sohaila
+//debugged by: Kate, Daniel 
 import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, Inject, PieSeries}
 from'@syncfusion/ej2-react-charts';
 import * as React from 'react';

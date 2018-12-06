@@ -1,3 +1,8 @@
+//written by: Derek, Erika, Jamie
+//tested by: Sara, Sohaila
+//debugged by: Kate, Daniel 
+
+
 import React, { Component } from 'react';
 import '../styles/App.css';
 import Header from './Header.js';

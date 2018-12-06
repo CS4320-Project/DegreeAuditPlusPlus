@@ -1,3 +1,7 @@
+//written by: Kate, Jamie, Sohalia
+//tested by: Sara, Daniel 
+//debugged by: Erika, Derek
+
 import React from 'react';
 import "../styles/UserInfo.css";
 import "../styles/Home.css";

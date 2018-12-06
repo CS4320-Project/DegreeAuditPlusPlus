@@ -1,3 +1,7 @@
+//written by: Derek, Erika, Jamie
+//tested by: Sara, Sohaila
+//debugged by: Kate, Daniel 
+
 import React from "react";
 import UserInfo from './UserInfo';
 import GPACalculator from './GPACalculator';

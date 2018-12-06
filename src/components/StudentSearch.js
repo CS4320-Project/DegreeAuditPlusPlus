@@ -1,3 +1,7 @@
+//written by: Sara, Kate, Daniel 
+//tested by: Derek, Jamie
+//debugged by: Erika, Sohaila
+
 import React from "react";
 import '../styles/StudentSearch.css';
 import { Button, FormGroup, FormControl } from "react-bootstrap";
