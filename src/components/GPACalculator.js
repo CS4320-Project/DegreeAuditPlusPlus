@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/GPACalculator.css";
+import { Button, FormGroup, FormControl } from "react-bootstrap";
 
 export default class GPACalculator extends React.Component {
 
@@ -77,7 +78,7 @@ export default class GPACalculator extends React.Component {
               <div className="row">
                 <form onSubmit={this.handleSubmit} method="post">
                   <table id="gpa-calc">
-                    <caption>Enter the course credit hours and the anticipated grade.</caption>
+                    <caption className="instructions">Enter the course credit hours and the anticipated grade.</caption>
                       <thead>
                         <tr>
                           <th className="border">&nbsp;</th>
@@ -259,9 +260,11 @@ export default class GPACalculator extends React.Component {
                   <p className="previous">Previous GPA hours attempted: (e.g. 10.5 or 10)
                       <input id="prevHours" name="prevHours" size="10" type="text" className="in" devaultValue={this.props.student.hoursTaken}></input>
                   </p>
-                    <button className="button" onSubmit={this.handleSubmit} type="submit" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                        CALCULATE GPA +
-                    </button>
+
+
+                  <button className="thisismebutt thisismebutt222">CALCULATE</button>
+
+
                     {this.state.overallGPA !== null ?
                       (
 
@@ -269,7 +272,8 @@ export default class GPACalculator extends React.Component {
                         <div className="container">
                         <div className="row">
 
-                        <h2 className="button">RESULTS</h2>
+                        <h3 className="resultsTitle">RESULTS</h3>
+
                           <h2 className="results col-sm-4">Total hours: {totalHours}</h2>
                           <h3 className="results col-sm-4">Semester GPA: {semesterGPA}</h3>
                           <h4 className="results col-sm-4">Overall GPA: {overallGPA}</h4>
