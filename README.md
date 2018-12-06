@@ -1,7 +1,7 @@
 # DegreeAuditPlusPlus
-The site is hosted [here](http://ec2-52-14-173-245.us-east-2.compute.amazonaws.com:3000)
+##### Sara Caponi, Jamie Flores, Daniel Jaegers, Derek Rogers, Erika Eckfeld, Kate Gardner, Sohaila Bakr
 
-### Sara Caponi, Jamie Flores, Daniel Jaegers, Derek Rogers, Erika Eckfeld, Kate Gardner, Sohaila Bakr
+The site is hosted [here](http://ec2-52-14-173-245.us-east-2.compute.amazonaws.com:3000)
 
 
 ## How to Run Our Program As a Student
@@ -61,17 +61,3 @@ Keep this terminal window open! Open a new window and start the React app with
 ```
 npm start
 ```
-
-## Additions Since Demo 1
-#### Since Demo1 we have implemented significant changes in our code:
-1. Our most significant change is the addition of GPACalculator.js. This code creates a GPA component  that allows the user to import their possible grades for their current semester and view how they will alter their overall GPA. The number of previous hours the student has taken and their previous GPA is already pre-populated so the student does not have to enter it or look it up on another site. 
-
-2.  Next, our addition of Chart.js allows the user to visually see their degree progress. The dynamic Donut chart changes as the user progresses through their degree. This addition improves our user experience as well as shows the user important information. 
-
-3.  We also made significant additions to our backend by adding more classes and more students. 
-4. Our user interface was improved and simplified since Demo 1. 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njc2MzY3OTAsNzY5NzExMjQ0LC01ND
-I0NzA5NzMsNzMwOTk4MTE2XX0=
--->
