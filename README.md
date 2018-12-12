@@ -1,12 +1,12 @@
 # DegreeAuditPlusPlus
 ##### Sara Caponi, Jamie Flores, Daniel Jaegers, Derek Rogers, Erika Eckfeld, Kate Gardner, Sohaila Bakr
 
-The site is hosted [here](http://ec2-52-14-173-245.us-east-2.compute.amazonaws.com:3000)
+The site is hosted [here](http://ec2-3-16-186-191.us-east-2.compute.amazonaws.com:3000)
 
 
 ## How to Run Our Program As a Student
 
-1. In order to run and use our program, open [****DegreeAuditPlusPlus****](HTTPS://TINYURL.COM/YC2JQ4SW)
+1. In order to run and use our program, open [****DegreeAuditPlusPlus****](http://ec2-3-16-186-191.us-east-2.compute.amazonaws.com:3000)
 
 2. Enter the ****username: sbc436**** and then the ****password: abc123****
 
@@ -16,7 +16,7 @@ The site is hosted [here](http://ec2-52-14-173-245.us-east-2.compute.amazonaws.c
 
 ## How to Run Our Program As a Advisor
 
-1. In order to run and use our program, open [****DegreeAuditPlusPlus****](HTTPS://TINYURL.COM/YC2JQ4SW)
+1. In order to run and use our program, open [****DegreeAuditPlusPlus****](http://ec2-3-16-186-191.us-east-2.compute.amazonaws.com:3000)
 
 2. Enter the ****username: balsern**** and then the ****password: tigers1****
 
